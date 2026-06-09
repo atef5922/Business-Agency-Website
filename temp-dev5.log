@@ -1,0 +1,2754 @@
+
+> multitech-solution-website@1.0.0 predev
+> node -e "const fs = require('fs'); fs.rmSync('.next', { recursive: true, force: true });"
+
+
+> multitech-solution-website@1.0.0 dev
+> next dev --port 3000
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.68.84:3000
+
+ ✓ Starting...
+ ✓ Ready in 2s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.5s (1834 modules)
+ GET / 200 in 6882ms
+ GET / 200 in 335ms
+ GET / 200 in 361ms
+ ⨯ ./src/components/layout/TopBar.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4mC:\Users\Shajib\Documents\multitech Solution\src\components\layout\TopBar.tsx[0m:29:1]
+ [2m26[0m |   );
+ [2m27[0m | }
+ [2m28[0m | 
+ [2m29[0m |           ))}
+    : [35;1m          ^[0m
+ [2m30[0m |         </div>
+ [2m31[0m |       </Container>
+ [2m32[0m |     </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/layout/TopBar.tsx
+./src/app/layout.tsx
+ ○ Compiling /_error ...
+ ⨯ ./src/components/layout/TopBar.tsx
+Error:   [31mx[0m Expression expected
+    ,-[[36;1;4mC:\Users\Shajib\Documents\multitech Solution\src\components\layout\TopBar.tsx[0m:29:1]
+ [2m26[0m |   );
+ [2m27[0m | }
+ [2m28[0m | 
+ [2m29[0m |           ))}
+    : [35;1m          ^[0m
+ [2m30[0m |         </div>
+ [2m31[0m |       </Container>
+ [2m32[0m |     </div>
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/layout/TopBar.tsx
+./src/app/layout.tsx
+ GET / 500 in 8989ms
+ GET / 500 in 16ms
+ GET / 500 in 14ms
+ GET / 500 in 34ms
+ ✓ Compiled /_error in 604ms (2183 modules)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 921ms
+ GET / 200 in 390ms
+ ✓ Compiled in 826ms (2183 modules)
+ GET / 200 in 401ms
+ ⨯ ./src/components/layout/Navbar.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\Shajib\Documents\multitech Solution\src\components\layout\Navbar.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./src/components/layout/Navbar.tsx
+./src/app/layout.tsx
+ GET / 500 in 17ms
+ GET / 500 in 17ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 2.6s (2185 modules)
+ GET / 200 in 196ms
+ GET / 200 in 2048ms
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2180434448'
+}
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2273901396'
+}
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2273901396'
+}
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>)
+    at stringify (<anonymous>) {
+  digest: '2273901396'
+}
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2180434448'
+}
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2180434448'
+}
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  digest: '701126238'
+}
+ ⨯ Error: Could not find the module "C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\next-devtools\userspace\app\segment-explorer-node.js#SegmentViewNode" in the React Client Manifest. This is probably a bug in the React Server Components bundler.
+    at stringify (<anonymous>) {
+  digest: '2180434448'
+}
+[TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function]
+ ⨯ [TypeError: __webpack_modules__[moduleId] is not a function] {
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ✓ Compiled in 1918ms (2171 modules)
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: __webpack_modules__[moduleId] is not a function] {
+  page: '/'
+}
+ GET / 200 in 269ms
+ GET / 500 in 8686ms
+ GET / 500 in 430ms
+ ✓ Compiled in 695ms (2185 modules)
+ GET / 200 in 153ms
+ ○ Compiling /services/[slug] ...
+ ✓ Compiled /services/[slug] in 2.6s (2228 modules)
+ GET /services 200 in 3450ms
+ GET /about 200 in 3451ms
+ GET /contact 200 in 3454ms
+ ⨯ [Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ [Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+[Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+[Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+[Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+[Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /services/business-consulting 500 in 9849ms
+ GET /services/business-consulting 500 in 235ms
+ GET /services/custom-software-development 500 in 9848ms
+ GET /services/custom-software-development 500 in 235ms
+ GET /services/web-application-development 500 in 6369ms
+ GET /services/web-application-development 500 in 235ms
+ GET /services/mobile-app-development 500 in 6368ms
+ GET /services/mobile-app-development 500 in 235ms
+ GET /services/erp-crm-solutions 500 in 6368ms
+ GET /services/erp-crm-solutions 500 in 235ms
+ ○ Compiling /blog ...
+ ⨯ [Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/business-automation'
+}
+ ✓ Compiled /blog in 1740ms (2248 modules)
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[Error: Cannot find module './vendor-chunks/motion-dom.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\dev\static-paths-worker.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\compiled\jest-worker\processChild.js] {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/services/business-automation'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /services/business-automation 500 in 1983ms
+ GET /services/business-automation 500 in 167ms
+ GET /blog 200 in 1987ms
+ GET /projects 200 in 1988ms
+ GET /team 200 in 1988ms
+ ⨯ ./src/components/layout/TopBar.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\Shajib\Documents\multitech Solution\src\components\layout\TopBar.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./src/components/layout/TopBar.tsx
+./src/app/layout.tsx
+ ✓ Compiled in 482ms (2191 modules)
+ GET / 200 in 1076ms
+ ✓ Compiled /services in 473ms (1217 modules)
+ ✓ Compiled (1228 modules)
+ ⨯ ./src/components/layout/Navbar.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\Shajib\Documents\multitech Solution\src\components\layout\Navbar.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./src/components/layout/Navbar.tsx
+./src/app/layout.tsx
+ ✓ Compiled in 814ms (2226 modules)
+ ✓ Compiled in 540ms (2226 modules)
+ ✓ Compiled in 862ms (2226 modules)
+ ✓ Compiled in 288ms (998 modules)
+ ✓ Compiled in 479ms (2191 modules)
+ ✓ Compiled in 246ms (998 modules)
+ ⨯ [TypeError: a[d] is not a function] { digest: '2079659537' }
+[TypeError: a[d] is not a function]
+ ⨯ [TypeError: a[d] is not a function]
+ ⨯ [TypeError: a[d] is not a function] { page: '/' }
+ GET / 500 in 1142ms
+ ✓ Compiled in 439ms (2191 modules)
+ ✓ Compiled in 323ms (2191 modules)
+ ⨯ TypeError: a[d] is not a function
+    at c (C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js:1:127)
+    at 75930 (C:\Users\Shajib\Documents\multitech Solution\.next\server\chunks\572.js:1:11105)
+    at Object.c [as require] (C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js:1:127) {
+  digest: '3274924179'
+}
+ GET / 500 in 182ms
+ ✓ Compiled /services/[slug] in 409ms (1203 modules)
+ ✓ Compiled (1246 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js:487:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js:490:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/about'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/business-consulting'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/custom-software-development'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\contact\page.js:509:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\contact\page.js:512:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/contact'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js:564:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js:567:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js:487:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js:490:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/about'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/business-consulting'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/custom-software-development'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\contact\page.js:509:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\contact\page.js:512:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/contact'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js:564:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\page.js:567:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\about\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /about 500 in 1831ms
+ GET /about 500 in 340ms
+ GET /services/business-consulting 500 in 1825ms
+ GET /services/business-consulting 500 in 340ms
+ GET /services/custom-software-development 500 in 1820ms
+ GET /services/custom-software-development 500 in 340ms
+ GET /contact 500 in 1831ms
+ GET /contact 500 in 340ms
+ GET /services 500 in 1831ms
+ GET /services 500 in 340ms
+ ✓ Compiled /projects in 351ms (1252 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/mobile-app-development'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/erp-crm-solutions'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/business-automation'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/web-application-development'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/mobile-app-development'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/erp-crm-solutions'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/business-automation'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:531:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js:534:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/services/web-application-development'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\projects\page.js:498:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\projects\page.js:501:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/projects'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\projects\page.js:498:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\projects\page.js:501:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/projects'
+}
+ GET /services/mobile-app-development 500 in 1334ms
+ GET /services/mobile-app-development 500 in 280ms
+ GET /services/erp-crm-solutions 500 in 1334ms
+ GET /services/erp-crm-solutions 500 in 280ms
+ GET /services/business-automation 500 in 1333ms
+ GET /services/business-automation 500 in 280ms
+ GET /services/web-application-development 500 in 1334ms
+ GET /services/web-application-development 500 in 280ms
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\services\[slug]\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /projects 500 in 1415ms
+ GET /projects 500 in 77ms
+ ✓ Compiled /team in 350ms (1262 modules)
+ ✓ Compiled (1264 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js:476:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js:479:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/blog'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\team\page.js:476:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\team\page.js:479:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/team'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js:476:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js:479:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/blog'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\team\page.js:476:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\team\page.js:479:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/team'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET /blog 500 in 1012ms
+ GET /blog 500 in 70ms
+ GET /team 500 in 1011ms
+ GET /team 500 in 70ms
+ ✓ Compiled in 382ms (998 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 175ms
+ GET / 500 in 42ms
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 113ms
+ GET / 500 in 34ms
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 129ms
+ GET / 500 in 47ms
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ HEAD / 500 in 110ms
+ HEAD / 500 in 34ms
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\framer-motion.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\framer-motion.js',
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 122ms
+ GET / 500 in 49ms
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\app-paths-manifest.json',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\app-paths-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\app-paths-manifest.json',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages-manifest.json'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\routes-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\routes-manifest.json'
+}
+ GET / 500 in 133ms
+ GET / 500 in 50ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 135ms
+ GET / 500 in 49ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 160ms
+ GET / 500 in 49ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 115ms
+ GET / 500 in 33ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 126ms
+ GET / 500 in 48ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 153ms
+ GET / 500 in 69ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 132ms
+ GET / 500 in 55ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 111ms
+ GET / 500 in 36ms
+ ✓ Compiled in 260ms (998 modules)
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\blog\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ ⨯ [TypeError: Cannot read properties of undefined (reading '/_app')]
+[TypeError: Cannot read properties of undefined (reading '/_app')]
+ GET / 500 in 110ms
+ GET / 500 in 32ms
+ ✓ Compiled in 495ms (2191 modules)
+ ✓ Compiled /_not-found in 413ms (2181 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\next.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js:421:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js:424:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\next.js'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages\\_document.js'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages\\_document.js'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\next.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\next.js',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages\\_document.js'
+}
+Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\next.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:674:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:677:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\next.js',
+  page: '/'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages\\_document.js'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 534ms
+ GET / 500 in 248ms
+[Error: ENOENT: no such file or directory, stat 'C:\Users\Shajib\Documents\multitech Solution\.next\cache\webpack\server-development\0.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\cache\\webpack\\server-development\\0.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat 'C:\Users\Shajib\Documents\multitech Solution\.next\cache\webpack\server-development\0.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\cache\\webpack\\server-development\\0.pack.gz'
+}
+ ⨯ unhandledRejection:  [Error: ENOENT: no such file or directory, stat 'C:\Users\Shajib\Documents\multitech Solution\.next\cache\webpack\server-development\0.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\cache\\webpack\\server-development\\0.pack.gz'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat 'C:\Users\Shajib\Documents\multitech Solution\.next\cache\webpack\server-development\0.pack.gz'
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 587ms
+ GET / 500 in 274ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 553ms
+ GET / 500 in 250ms
+ ⨯ Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+Error: Cannot find module './517.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16773)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\page.js:2:16834) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array],
+  page: '/'
+}
+ ⨯ Error: Cannot find module './611.js'
+Require stack:
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\webpack-runtime.js
+- C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\require.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\load-components.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\utils.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\options.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\swc\index.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\build\next-config-ts\transpile-config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\config.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\next.js
+- C:\Users\Shajib\Documents\multitech Solution\node_modules\next\dist\server\lib\start-server.js
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:325)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js:1:371) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [Array]
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ GET / 500 in 547ms
+ GET / 500 in 262ms
+ ✓ Compiled in 1374ms (2192 modules)
+ ⨯ ./src/components/layout/Navbar.tsx
+Error: 
+
+Caused by:
+    0: Failed to read source code from C:\Users\Shajib\Documents\multitech Solution\src\components\layout\Navbar.tsx
+    1: The system cannot find the file specified. (os error 2)
+
+Import trace for requested module:
+./src/components/layout/Navbar.tsx
+./src/app/layout.tsx
+ ✓ Compiled in 1007ms (2192 modules)
+ ✓ Compiled in 1590ms (2192 modules)
+ ✓ Compiled /_not-found in 347ms (1196 modules)
+ ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\vendor-chunks\next.js'
+    at <unknown> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js:421:47)
+    at Object.<anonymous> (C:\Users\Shajib\Documents\multitech Solution\.next\server\app\_not-found\page.js:424:3) {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\vendor-chunks\\next.js'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages\\_document.js'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\server\pages\_document.js'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\server\\pages\\_document.js'
+}
+[Error: ENOENT: no such file or directory, open 'C:\Users\Shajib\Documents\multitech Solution\.next\fallback-build-manifest.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\Shajib\\Documents\\multitech Solution\\.next\\fallback-build-manifest.json'
+}

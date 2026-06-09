@@ -1,0 +1,38 @@
+
+> multitech-solution-website@1.0.0 predev
+> node -e "const fs = require('fs'); fs.rmSync('.next', { recursive: true, force: true });"
+
+
+> multitech-solution-website@1.0.0 dev
+> next dev --port 3021
+
+   ▲ Next.js 15.5.19
+   - Local:        http://localhost:3021
+   - Network:      http://192.168.68.84:3021
+
+ ✓ Starting...
+ ✓ Ready in 1831ms
+ ○ Compiling / ...
+ ✓ Compiled / in 5s (1834 modules)
+ GET / 200 in 5888ms
+ ○ Compiling /about ...
+ ✓ Compiled /about in 1639ms (1859 modules)
+ GET /about 200 in 2147ms
+ ✓ Compiled /services in 337ms (1857 modules)
+ GET /services 200 in 895ms
+ ✓ Compiled /services/[slug] in 356ms (1870 modules)
+ GET /services/business-consulting 200 in 1466ms
+ GET /services/custom-software-development 200 in 189ms
+ ✓ Compiled /projects in 349ms (1877 modules)
+ GET /projects 200 in 844ms
+ ✓ Compiled /projects/[slug] in 363ms (1879 modules)
+ GET /projects/corporate-website-development 200 in 1298ms
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 869ms (1890 modules)
+ GET /blog 200 in 1284ms
+ ✓ Compiled /blog/[slug] in 424ms (1892 modules)
+ GET /blog/automation-modern-companies 200 in 1370ms
+ ✓ Compiled /contact in 428ms (1899 modules)
+ GET /contact 200 in 854ms
+ ✓ Compiled /team in 432ms (1901 modules)
+ GET /team 200 in 816ms
