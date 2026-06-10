@@ -182,9 +182,25 @@ export function HomeSections() {
                 <p key={item} className="flex items-center gap-3 font-bold text-[#111827]"><CheckCircle2 className="h-5 w-5 text-[#134E4A]" /> {item}</p>
               ))}
             </div>
-            <div className="mt-8 flex flex-wrap items-center gap-5">
+            <div className="mt-6 flex flex-wrap items-center justify-start gap-[32px]">
               <PrimaryButton href="/about">Learn More About Us</PrimaryButton>
-              <div className="premium-card rounded-3xl px-5 py-4"><b>Founder&apos;s Note</b><p className="text-sm text-[#6B7280]">Technology should make growth simpler.</p></div>
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="flex shrink-0 items-center gap-[14px] whitespace-nowrap"
+              >
+                <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full border-[2px] border-[#B7C95A] bg-transparent text-[#111827] shadow-[0_8px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_22px_rgba(0,0,0,0.12)]">
+                  <span className="text-xs font-semibold tracking-[0.12em] text-[#111827]">MD</span>
+                </span>
+                <span className="leading-none">
+                  <span className="block whitespace-nowrap text-[30px] font-medium italic leading-none text-[#111827]" style={{ fontFamily: "'Playfair Display', 'Cormorant Garamond', serif" }}>
+                    Michel Devid
+                  </span>
+                  <span className="mt-1 block whitespace-nowrap text-[16px] font-semibold leading-none text-[#0B4A42]">Founder</span>
+                </span>
+              </motion.div>
             </div>
           </div>
         </Container>
