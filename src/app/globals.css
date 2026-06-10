@@ -32,8 +32,10 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-plus-jakarta), Inter, system-ui, sans-serif;
+  font-weight: 400;
   text-rendering: geometricPrecision;
+  letter-spacing: -0.01em;
 }
 
 h1,
@@ -42,7 +44,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Sora, "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-plus-jakarta), Inter, system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+button {
+  font-weight: 700;
 }
 
 a {

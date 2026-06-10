@@ -34,7 +34,7 @@ export default async function BlogDetailsPage({ params }: Props) {
           <div className="grid gap-7 text-lg leading-9 text-[#6B7280]">{post.content.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
           <div className="mt-12 rounded-3xl bg-[#FFFFFF] p-7 card-shadow">
             <h2 className="text-2xl font-black">Author</h2>
-            <p className="mt-3 leading-8 text-[#6B7280]">Multitech Solution strategy team shares practical insights from consulting, automation, and software delivery projects.</p>
+            <p className="mt-3 leading-8 text-[#6B7280]">Inovexa strategy team shares practical insights from consulting, automation, and software delivery projects.</p>
             <div className="mt-5 flex gap-3">{[Facebook, Twitter, Linkedin].map((Icon, index) => <Link href="#" key={index} aria-label="Share post" className="grid h-10 w-10 place-items-center rounded-full bg-[#134E4A] text-white"><Icon className="h-4 w-4" /></Link>)}</div>
           </div>
         </Container>

@@ -9,7 +9,7 @@ import { blogs } from "@/data/blogs";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "Read Multitech Solution insights on digital transformation, automation, custom software, and business technology growth."
+  description: "Read Inovexa insights on digital transformation, automation, custom software, and business technology growth."
 };
 
 export default function BlogPage() {

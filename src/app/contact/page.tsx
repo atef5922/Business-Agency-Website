@@ -10,7 +10,7 @@ import { faqs } from "@/data/faqs";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Multitech Solution in Dhaka, Bangladesh for consulting, software development, automation, ERP, CRM, and analytics projects."
+  description: "Contact Inovexa in Dhaka, Bangladesh for consulting, software development, automation, ERP, CRM, and analytics projects."
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
       <section className="py-16 sm:py-20 lg:py-24">
         <Container>
           <div className="mb-12 grid gap-6 md:grid-cols-3">
-            {[{ icon: MapPin, title: "Address", text: "Dhaka, Bangladesh" }, { icon: Phone, title: "Phone", text: "+880 1700-000000" }, { icon: Mail, title: "Email", text: "info@multitechsolution.com" }].map((item) => {
+            {[{ icon: MapPin, title: "Address", text: "Dhaka, Bangladesh" }, { icon: Phone, title: "Phone", text: "+880 1700-000000" }, { icon: Mail, title: "Email", text: "info@inovexa.com" }].map((item) => {
               const Icon = item.icon;
               return <article key={item.title} className="rounded-3xl border border-[#E5E7EB] bg-[#FFFFFF] p-7 card-shadow"><Icon className="mb-5 h-7 w-7 text-[#134E4A]" /><h2 className="text-xl font-black text-[#111827]">{item.title}</h2><p className="mt-2 text-[#6B7280]">{item.text}</p></article>;
             })}

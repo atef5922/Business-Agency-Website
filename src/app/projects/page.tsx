@@ -8,7 +8,7 @@ import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Explore Multitech Solution case studies across websites, CRM, ERP, automation, commerce, and analytics."
+  description: "Explore Inovexa case studies across websites, CRM, ERP, automation, commerce, and analytics."
 };
 
 export default function ProjectsPage() {

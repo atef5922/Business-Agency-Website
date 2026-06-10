@@ -1,18 +1,26 @@
 import type { Metadata } from "next";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "@/app/globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
-import { CustomCursorGlow } from "@/components/shared/CustomCursorGlow";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-plus-jakarta",
+  display: "swap"
+});
 
 export const metadata: Metadata = {
   title: {
-    default: "Multitech Solution | Business Technology Consulting",
-    template: "%s | Multitech Solution"
+    default: "Inovexa | Premium Technology Consulting",
+    template: "%s | Inovexa"
   },
-  description: "Multitech Solution helps Bangladeshi businesses grow with software, automation, consulting, cloud, ERP, CRM, and analytics solutions.",
+  description:
+    "Inovexa is a premium technology consulting and digital transformation company helping businesses innovate, automate, and grow.",
   openGraph: {
-    title: "Multitech Solution",
-    description: "Transforming Businesses Through Technology, Innovation & Growth.",
+    title: "Inovexa",
+    description: "Innovate. Automate. Grow.",
     type: "website",
     locale: "en_US"
   }
@@ -20,9 +28,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body>
-        <CustomCursorGlow />
+    <html lang="en" className={plusJakarta.variable}>
+      <body className={plusJakarta.className}>
         <Navbar />
         {children}
         <Footer />

@@ -11,7 +11,7 @@ import { team } from "@/data/team";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn about Multitech Solution, a Bangladeshi business technology company focused on consulting, automation, and custom software."
+  description: "Learn about Inovexa, a Bangladeshi business technology company focused on consulting, automation, and custom software."
 };
 
 export default function AboutPage() {
@@ -20,9 +20,9 @@ export default function AboutPage() {
       <PageHero label="About Us" title="A Technology Partner For Practical Business Growth" text="We help organizations modernize operations, build scalable systems, and make technology decisions with clarity." />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1100&q=80" alt="Multitech Solution strategy team" width={900} height={650} className="rounded-3xl object-cover" />
+          <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1100&q=80" alt="Inovexa strategy team" width={900} height={650} className="rounded-3xl object-cover" />
           <div>
-            <SectionHeader label="Company Overview" title="Built For Businesses That Want Technology To Create Real Momentum" text="Multitech Solution works with startups, SMEs, and corporate teams that need reliable consulting, development, and automation support." />
+            <SectionHeader label="Company Overview" title="Built For Businesses That Want Technology To Create Real Momentum" text="Inovexa works with startups, SMEs, and corporate teams that need reliable consulting, development, and automation support." />
             <div className="mt-8 grid gap-4">
               {["Mission: simplify growth through smart technology", "Vision: become a trusted digital transformation partner in Bangladesh", "Values: clarity, reliability, innovation, and long-term support"].map((item) => (
                 <p key={item} className="flex gap-3 font-bold text-[#111827]"><CheckCircle2 className="mt-1 h-5 w-5 text-[#134E4A]" /> {item}</p>

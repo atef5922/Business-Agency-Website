@@ -11,7 +11,7 @@ import { TeamCard } from "@/components/cards/TeamCard";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton, SecondaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { FloatingShapes, GlowEffect, GradientMesh, SectionPattern } from "@/components/shared/VisualEffects";
+import { FloatingShapes, GradientMesh, SectionPattern } from "@/components/shared/VisualEffects";
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { TiltCard } from "@/components/shared/TiltCard";
 import { PremiumBadge } from "@/components/shared/PremiumBadge";
@@ -50,6 +50,8 @@ export function HomeSections() {
     const ctx = gsap.context(() => {
     gsap.from(".hero-stagger", { opacity: 0, y: 28, duration: 0.8, stagger: 0.1, ease: "power3.out" });
     gsap.from(".hero-dashboard", { opacity: 0, x: 70, rotateY: -14, duration: 1.0, delay: 0.2, ease: "power3.out" });
+    gsap.from(".hero-button", { opacity: 0, y: 12, duration: 0.45, stagger: 0.08, delay: 0.28, ease: "power3.out" });
+    gsap.from(".hero-stat", { opacity: 0, y: 16, duration: 0.65, stagger: 0.07, delay: 0.3, ease: "power3.out" });
       gsap.to(".hero-bg", { yPercent: 8, ease: "none", scrollTrigger: { trigger: heroRef.current, scrub: true } });
       gsap.to(".floating-shape", { y: -18, rotation: 8, repeat: -1, yoyo: true, duration: 2.8, ease: "sine.inOut", stagger: 0.2 });
       if (ctaRef.current) {
@@ -59,71 +61,76 @@ export function HomeSections() {
     return () => ctx.revert();
   }, []);
 
-  function moveHeroGlow(event: React.MouseEvent<HTMLElement>) {
-    const target = event.currentTarget.querySelector<HTMLElement>(".hero-mouse-glow");
-    if (!target || window.matchMedia("(max-width: 768px)").matches) return;
-    const rect = event.currentTarget.getBoundingClientRect();
-    target.style.transform = `translate3d(${event.clientX - rect.left - 220}px, ${event.clientY - rect.top - 220}px, 0)`;
-  }
-
   return (
     <>
-      <section ref={heroRef} onMouseMove={moveHeroGlow} className="relative min-h-[calc(100svh - 80px)] overflow-hidden bg-[#072F2B] text-white sm:min-h-[calc(100svh - 80px)] lg:min-h-[calc(100svh - 120px)]">
+      <section
+        ref={heroRef}
+        className="relative min-h-[calc(100svh - 112px)] overflow-hidden bg-[#072F2B] text-white sm:min-h-[calc(100svh - 112px)] lg:min-h-[calc(100svh - 112px)]"
+      >
         <Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80" alt="Modern business technology office" fill priority className="hero-bg object-cover saturate-0 grayscale contrast-95 opacity-65" sizes="100vw" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(183,201,90,.22),transparent_24%),radial-gradient(circle_at_80%_30%,rgba(169,189,73,.2),transparent_27%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(7,47,43,.82),rgba(6,31,29,.87))]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(7,47,43,.4),rgba(6,31,29,.75))]" />
-        <div className="absolute inset-0 image-overlay" />
-        <div className="absolute inset-0 hero-tech-pattern opacity-70" />
-        <span className="absolute inset-0 opacity-55" style={{ background: "radial-gradient(circle at 50% 52%, transparent 0%, rgba(6,31,29,.72) 72%)" }} />
-        <GradientMesh />
-        <span className="hero-mouse-glow pointer-events-none absolute left-0 top-0 hidden h-[440px] w-[440px] rounded-full bg-[#B7C95A]/12 blur-3xl transition-transform duration-200 lg:block" />
-        <FloatingShapes />
-        <Container className="relative grid min-h-[calc(100svh - 80px)] items-center gap-10 py-16 sm:min-h-[calc(100svh - 80px)] sm:py-20 lg:min-h-[calc(100svh - 120px)] lg:grid-cols-[minmax(0,1.02fr)_minmax(420px,.98fr)] lg:gap-12 lg:py-24">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(7,47,43,.8),rgba(6,31,29,.88))]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(7,47,43,.4),rgba(6,31,29,.78))]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(255,255,255,0.05),transparent_32%),radial-gradient(circle_at_82%_30%,rgba(255,255,255,0.04),transparent_42%)]" />
+          <div className="absolute inset-0 image-overlay" />
+          <div className="absolute inset-0 hero-tech-pattern opacity-70" />
+          <span className="absolute inset-0 opacity-55" style={{ background: "radial-gradient(circle at 50% 52%, transparent 0%, rgba(6,31,29,.72) 72%)" }} />
+        </div>
+        <div className="pointer-events-none absolute inset-0">
+          <span className="absolute -left-16 -top-12 hidden h-[500px] w-[500px] rounded-full border border-white/5 opacity-70 blur-[1px] lg:block" />
+          <span className="absolute -right-24 top-16 hidden h-[360px] w-[360px] rounded-full border border-white/6 opacity-60 lg:block" />
+          <span className="absolute left-1/3 top-2/5 hidden h-px w-56 bg-gradient-to-r from-transparent via-white/8 to-transparent lg:block" />
+          <span className="absolute right-1/4 top-1/3 hidden h-44 w-px bg-gradient-to-b from-transparent via-white/6 to-transparent lg:block" />
+          <GradientMesh />
+          <FloatingShapes />
+        </div>
+        <Container className="relative grid min-h-[calc(100svh - 112px)] items-center gap-10 py-16 sm:min-h-[calc(100svh - 112px)] sm:py-20 lg:min-h-[calc(100svh - 112px)] lg:grid-cols-[minmax(0,1.02fr)_minmax(420px,.98fr)] lg:gap-12 lg:py-20">
           <div className="max-w-4xl self-center lg:self-center">
             <p className="hero-stagger mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-5 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#B7C95A] backdrop-blur-xl">Transforming Businesses Through Technology</p>
             <h1 className="hero-stagger text-balance text-4xl font-black leading-[1.02] sm:text-5xl md:text-6xl lg:text-[5.2rem]">Transforming Business Challenges Into <span className="typing-highlight">Digital Success Stories</span></h1>
-            <p className="hero-stagger mt-5 max-w-3xl text-base leading-8 text-white/80 sm:text-lg sm:leading-9">Multitech Solution helps organizations streamline operations, automate workflows, improve customer experience, and accelerate growth through modern technology solutions.</p>
+            <p className="hero-stagger mt-5 max-w-3xl text-base leading-8 text-white/80 sm:text-lg sm:leading-9">Inovexa helps organizations streamline operations, automate workflows, improve customer experience, and accelerate growth through modern technology solutions.</p>
             <div className="hero-stagger mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <PrimaryButton href="/contact" className="w-full justify-center sm:w-auto">Get Free Consultation</PrimaryButton>
               <SecondaryButton href="/services" className="w-full justify-center sm:w-auto">Explore Services</SecondaryButton>
             </div>
           </div>
-          <TiltCard className="hero-dashboard hidden lg:block lg:self-center">
+          <div className="hidden lg:block lg:self-center">
+            <TiltCard className="hero-dashboard">
               <div className="glass-panel relative overflow-hidden rounded-[36px] p-5 shadow-[0_28px_80px_rgba(7,59,50,.2)]">
-              <div className="mb-5 flex items-center justify-between">
-                <PremiumBadge>Live Growth Console</PremiumBadge>
-                <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-bold text-white/70">Q2 2026</span>
-              </div>
-              <div className="rounded-[28px] border border-white/15 bg-[#072F2B]/78 p-5">
-                <div className="mb-6 flex items-end justify-between">
-                  <div>
-                    <p className="text-sm text-white/55">Operational Efficiency</p>
-                    <h3 className="mt-2 text-5xl font-black text-[#B7C95A]">+60%</h3>
-                  </div>
-                  <div className="rounded-2xl bg-[#B7C95A] px-4 py-2 text-sm font-black text-[#072F2B]">Optimized</div>
+                <div className="mb-5 flex items-center justify-between">
+                  <PremiumBadge>Live Growth Console</PremiumBadge>
+                  <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-bold text-white/70">Q2 2026</span>
                 </div>
-                <div className="grid grid-cols-12 items-end gap-2">
-                  {[34, 48, 42, 64, 58, 76, 68, 86, 74, 92, 83, 96].map((height, index) => (
-                    <span key={index} className="rounded-t-xl bg-[linear-gradient(180deg,#F7F7F3,#134E4A)]" style={{ height: `${height * 1.55}px` }} />
+                <div className="rounded-[28px] border border-white/15 bg-[#072F2B]/78 p-5">
+                  <div className="mb-6 flex items-end justify-between">
+                    <div>
+                      <p className="text-sm text-white/55">Operational Efficiency</p>
+                      <h3 className="mt-2 text-5xl font-black text-[#B7C95A]">+60%</h3>
+                    </div>
+                    <div className="rounded-2xl bg-[#B7C95A] px-4 py-2 text-sm font-black text-[#072F2B]">Optimized</div>
+                  </div>
+                  <div className="grid grid-cols-12 items-end gap-2">
+                    {[34, 48, 42, 64, 58, 76, 68, 86, 74, 92, 83, 96].map((height, index) => (
+                      <span key={index} className="rounded-t-xl bg-[linear-gradient(180deg,#F7F7F3,#134E4A)]" style={{ height: `${height * 1.55}px` }} />
+                    ))}
+                  </div>
+                </div>
+                <div className="mt-5 grid grid-cols-2 gap-4">
+                  {[
+                    ["CRM Leads", "4.8k", "+32%"],
+                    ["Automation", "128", "+18%"],
+                    ["Reports", "96%", "Live"],
+                    ["Support", "24/7", "Ready"]
+                  ].map(([label, value, tag]) => (
+                    <div key={label} className="rounded-3xl border border-white/10 bg-white/8 p-4">
+                      <p className="text-xs text-white/50">{label}</p>
+                      <div className="mt-2 flex items-end justify-between gap-2"><b className="text-2xl text-white">{value}</b><span className="text-xs font-black text-[#B7C95A]">{tag}</span></div>
+                    </div>
                   ))}
                 </div>
               </div>
-              <div className="mt-5 grid grid-cols-2 gap-4">
-                {[
-                  ["CRM Leads", "4.8k", "+32%"],
-                  ["Automation", "128", "+18%"],
-                  ["Reports", "96%", "Live"],
-                  ["Support", "24/7", "Ready"]
-                ].map(([label, value, tag]) => (
-                  <div key={label} className="rounded-3xl border border-white/10 bg-white/8 p-4">
-                    <p className="text-xs text-white/50">{label}</p>
-                    <div className="mt-2 flex items-end justify-between gap-2"><b className="text-2xl text-white">{value}</b><span className="text-xs font-black text-[#B7C95A]">{tag}</span></div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </TiltCard>
+            </TiltCard>
+          </div>
           <div className="hero-stagger grid gap-4 self-start sm:grid-cols-2 lg:col-span-2 lg:mt-2 lg:grid-cols-4">
             {stats.map((stat, index) => {
               const Icon = statIcons[index] ?? BadgeCheck;
@@ -165,7 +172,7 @@ export function HomeSections() {
             <div className="absolute right-4 bottom-4 hidden rounded-3xl border border-[#E5E7EB] bg-white/90 p-5 shadow-2xl backdrop-blur-xl md:block"><b className="block text-2xl text-[#134E4A]">250+</b> Projects Delivered</div>
           </div>
           <div>
-            <SectionHeader label="About Multitech Solution" title="The Journey Behind Our Digital Business Success" text="Multitech Solution is a business technology company helping organizations adopt digital systems, automate operations, and build scalable software solutions for long-term growth." />
+            <SectionHeader label="About Inovexa" title="The Journey Behind Our Digital Business Success" text="Inovexa is a business technology company helping organizations adopt digital systems, automate operations, and build scalable software solutions for long-term growth." />
             <div className="mt-8 grid gap-4">
               {["Strategic Technology Consulting", "Custom Software Development", "Business Process Automation", "Long-Term Technical Support"].map((item) => (
                 <p key={item} className="flex items-center gap-3 font-bold text-[#111827]"><CheckCircle2 className="h-5 w-5 text-[#134E4A]" /> {item}</p>
@@ -181,7 +188,6 @@ export function HomeSections() {
 
       <MotionSection className="relative overflow-hidden bg-[#072F2B] text-white">
         <GradientMesh />
-        <GlowEffect className="right-10 top-24 h-72 w-72" />
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <SectionHeader dark label="Innovation & Growth" title="Empowering Your Brand With Innovative Digital Solutions" text="We combine consulting, automation, software engineering, and analytics to help companies move faster without losing operational control." />
@@ -248,7 +254,7 @@ export function HomeSections() {
             <div className="absolute left-4 top-4 hidden rounded-3xl bg-white/90 p-5 shadow-2xl backdrop-blur-xl md:block"><CircleDollarSign className="mb-3 h-7 w-7 text-[#134E4A]" /><b>Transparent delivery with measurable value</b><div className="mt-4 flex h-10 items-end gap-1">{[35, 52, 44, 70, 58].map((h) => <span key={h} className="w-3 rounded-t bg-[#B7C95A]" style={{ height: `${h}%` }} />)}</div></div>
           </div>
           <div>
-            <SectionHeader label="Why Choose Multitech Solution" title="Driving Success Through Tailored Technology And Proven Expertise" />
+            <SectionHeader label="Why Choose Inovexa" title="Driving Success Through Tailored Technology And Proven Expertise" />
             <div className="mt-8"><LightAccordion items={["Experienced Technology Team", "Custom Business Solutions", "Transparent Development Process", "Scalable & Secure Architecture", "Long-Term Support & Maintenance"].map((question) => ({ question, answer: "We combine business understanding, reliable engineering, and clear communication so every solution stays aligned with your growth goals." }))} /></div>
           </div>
         </Container>
@@ -302,7 +308,7 @@ export function HomeSections() {
             {[
               { icon: MapPin, title: "Address", text: "Dhaka, Bangladesh" },
               { icon: Phone, title: "Phone", text: "+880 1700-000000" },
-              { icon: Mail, title: "Email", text: "info@multitechsolution.com" }
+              { icon: Mail, title: "Email", text: "info@inovexa.com" }
             ].map((item) => {
               const Icon = item.icon;
               return (
@@ -341,8 +347,6 @@ export function HomeSections() {
     </>
   );
 }
-
-
 
 
 

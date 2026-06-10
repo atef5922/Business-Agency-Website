@@ -6,6 +6,7 @@ import { ChevronDown, Facebook, Instagram, Linkedin, Menu, Phone, X } from "luci
 import { useEffect, useState } from "react";
 import { services } from "@/data/services";
 import { TopBar } from "@/components/layout/TopBar";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 
 const links = [
   { href: "/", label: "Home" },
@@ -30,15 +31,18 @@ const quickLinks = [
   { href: "/contact", label: "Contact" }
 ];
 
+const headerContainer = "w-full px-6 lg:px-10";
+const headerColumns = "lg:grid-cols-[auto_minmax(0,1fr)_460px]";
+
 export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
+    const onScroll = () => setScrolled(window.scrollY > 50);
     onScroll();
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -51,26 +55,31 @@ export function Navbar() {
 
   return (
     <>
-      <div
-        className={`sticky top-0 z-50 bg-white transition-shadow duration-300 ${scrolled ? "shadow-[0_8px_32px_rgba(7,59,43,0.08)]" : ""}`}
-      >
-        <TopBar />
+      <div className="sticky top-0 z-[100] overflow-x-clip bg-white">
+        <div
+          className={`overflow-hidden border-b border-[#E5E7EB] bg-white transition-all duration-300 ease-out ${
+            scrolled
+              ? "pointer-events-none h-0 -translate-y-full opacity-0"
+              : "h-[40px] translate-y-0 opacity-100"
+          }`}
+        >
+          <TopBar />
+        </div>
 
-        <header className="border-b border-[#E5E7EB] bg-white">
-          <div className="mx-auto grid h-[88px] max-w-[1440px] grid-cols-[auto_1fr_auto] items-center gap-4 px-6 lg:grid-cols-[250px_1fr_auto] lg:gap-6 lg:px-10">
-            <Link
-              href="/"
-              className="inline-flex w-[250px] max-w-[50vw] items-center gap-3"
-              aria-label="Multitech Solution home"
-            >
-              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-[#073B32] text-[15px] font-black tracking-wide text-white">
-                MS
-              </span>
-              <span className="text-xl font-black leading-none text-[#073B32]">Multitech Solution</span>
+        <header
+          className={`border-b border-[#E5E7EB] bg-white transition-shadow duration-300 ${
+            scrolled ? "shadow-[0_8px_32px_rgba(7,59,43,0.08)]" : "shadow-none"
+          }`}
+        >
+          <div
+            className={`${headerContainer} flex h-[72px] items-center justify-between lg:grid lg:h-[72px] ${headerColumns}`}
+          >
+            <Link href="/" className="relative z-20 flex h-full shrink-0 items-center" aria-label="Inovexa home">
+              <BrandLogo />
             </Link>
 
-            <nav className="hidden justify-center lg:flex">
-              <div className="flex items-center gap-8 xl:gap-9">
+            <nav className="hidden min-w-0 flex-1 justify-center lg:flex">
+              <div className="flex h-full items-center gap-[28px]">
                 {links.map((link) => {
                   const isServices = link.label === "Services";
                   const isActive = pathname === link.href;
@@ -79,7 +88,7 @@ export function Navbar() {
                     <div key={link.href} className="group relative">
                       <Link
                         href={link.href}
-                        className={`inline-flex items-center gap-1 whitespace-nowrap border-b-2 border-transparent py-1 text-[15px] font-semibold leading-none text-[#111827] transition-colors duration-300 ${
+                        className={`inline-flex h-full items-center gap-1 whitespace-nowrap border-b-2 border-transparent font-semibold leading-none text-[15px] text-[#111827] transition-colors duration-300 ${
                           isActive ? "border-[#B7C95A] text-[#073B32]" : "hover:border-[#B7C95A] hover:text-[#073B32]"
                         }`}
                       >
@@ -88,27 +97,29 @@ export function Navbar() {
                       </Link>
 
                       {isServices ? (
-                        <div className="pointer-events-none invisible absolute left-1/2 top-full z-30 min-w-[340px] -translate-x-1/2 -translate-y-1 rounded-xl border border-[#E5E7EB] bg-white py-2 opacity-0 shadow-[0_16px_48px_rgba(7,59,43,0.16)] transition-all duration-300 group-hover:visible group-hover:pointer-events-auto group-hover:translate-y-0 group-hover:opacity-100">
-                          <div className="px-2">
-                            {services.slice(0, 6).map((service) => {
-                              const Icon = service.icon;
-                              return (
-                                <Link
-                                  key={service.slug}
-                                  href={`/services/${service.slug}`}
-                                  className="group/item flex items-start gap-3 rounded-lg px-4 py-3 text-sm text-[#111827] transition hover:bg-[#F7F7F3] hover:text-[#073B32]"
-                                  onClick={() => setOpen(false)}
-                                >
-                                  <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-md bg-[#F7F7F3] text-[#073B32]">
-                                    <Icon className="h-4 w-4" />
-                                  </span>
-                                  <span className="space-y-0.5">
-                                    <b className="block leading-tight">{service.title}</b>
-                                    <span className="block text-xs leading-5 text-[#6B7280]">{service.summary}</span>
-                                  </span>
-                                </Link>
-                              );
-                            })}
+                        <div className="pointer-events-none invisible absolute left-1/2 top-full z-30 min-w-[340px] -translate-x-1/2 pt-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
+                          <div className="rounded-xl border border-[#E5E7EB] bg-white py-2 shadow-[0_16px_48px_rgba(7,59,43,0.16)]">
+                            <div className="px-2">
+                              {services.slice(0, 6).map((service) => {
+                                const Icon = service.icon;
+                                return (
+                                  <Link
+                                    key={service.slug}
+                                    href={`/services/${service.slug}`}
+                                    className="group/item flex items-start gap-3 rounded-lg px-4 py-3 text-sm text-[#111827] transition hover:bg-[#F7F7F3] hover:text-[#073B32]"
+                                    onClick={() => setOpen(false)}
+                                  >
+                                    <span className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-md bg-[#F7F7F3] text-[#073B32]">
+                                      <Icon className="h-4 w-4" />
+                                    </span>
+                                    <span className="space-y-0.5">
+                                      <b className="block leading-tight">{service.title}</b>
+                                      <span className="block text-xs leading-5 text-[#6B7280]">{service.summary}</span>
+                                    </span>
+                                  </Link>
+                                );
+                              })}
+                            </div>
                           </div>
                         </div>
                       ) : null}
@@ -118,30 +129,31 @@ export function Navbar() {
               </div>
             </nav>
 
-            <div className="flex w-auto items-center justify-end gap-5 lg:w-[440px] xl:gap-6 xl:w-[460px]">
+            <div className="relative z-20 flex w-auto shrink-0 items-center justify-end gap-6 lg:w-full lg:max-w-[460px]">
               <a
                 href="tel:+8801700000000"
-                className="group hidden items-center gap-3 bg-transparent p-0 xl:flex"
+                className="hidden min-w-0 items-center gap-[12px] bg-transparent p-0 xl:flex"
               >
-                <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-[#B7C95A] text-[#073B32]">
-                  <Phone className="h-5 w-5" />
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#B7C95A] text-[#073B32]">
+                  <Phone className="h-6 w-6" />
                 </span>
-                <span className="leading-[1.2]">
-                  <span className="block text-xs font-semibold tracking-[0.08em] text-[#073B32]">PHONE:</span>
-                  <span className="mt-0.5 block text-lg font-bold text-[#111827]">+880 1700-000000</span>
+                <span className="min-w-0 leading-[1.2]">
+                  <span className="block text-[11px] font-bold tracking-[0.08em] text-[#073B32]">PHONE:</span>
+                  <span className="mt-0.5 block text-base font-extrabold text-[#111827]">+880 1700-000000</span>
                 </span>
               </a>
 
               <Link
                 href="/contact"
-                className="hidden h-14 w-[180px] items-center justify-center rounded-none bg-[#073B32] text-sm font-bold text-white transition-colors duration-300 hover:bg-[#0B3A35] lg:inline-flex"
+                className="hidden h-[52px] w-[170px] shrink-0 items-center justify-center rounded-sm bg-[#073B32] text-sm font-bold transition-colors duration-300 hover:bg-[#0B3A35] lg:inline-flex"
+                style={{ color: "#FFFFFF" }}
               >
-                Contact Now
+                <span style={{ color: "#FFFFFF" }}>Contact Now</span>
               </Link>
 
               <button
                 type="button"
-                className="grid h-11 w-11 place-items-center text-[#111827] transition-colors duration-300 hover:text-[#073B32] lg:hidden"
+                className="grid h-10 w-10 shrink-0 place-items-center text-[#111827] transition-colors duration-300 hover:text-[#073B32] lg:hidden"
                 aria-label="Open menu"
                 onClick={() => setOpen(true)}
               >
@@ -153,7 +165,7 @@ export function Navbar() {
       </div>
 
       <div
-        className={`fixed inset-0 z-[60] bg-black/45 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`fixed inset-0 z-[110] bg-black/45 backdrop-blur-sm transition-opacity duration-300 lg:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"}`}
       >
         <button
           type="button"
@@ -165,9 +177,8 @@ export function Navbar() {
           className={`ml-auto flex h-full w-[86%] max-w-sm transform flex-col bg-white p-6 text-[#111827] shadow-2xl transition-transform duration-300 ease-out ${open ? "translate-x-0" : "translate-x-full"}`}
         >
           <div className="mb-8 flex items-center justify-between">
-            <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2 text-[#073B32]">
-              <span className="grid h-9 w-9 place-items-center rounded-md bg-[#073B32] text-xs font-black text-white">MS</span>
-              <span className="font-black">Multitech Solution</span>
+            <Link href="/" onClick={() => setOpen(false)} aria-label="Inovexa home">
+              <BrandLogo />
             </Link>
             <button
               type="button"
@@ -208,12 +219,12 @@ export function Navbar() {
             </div>
 
             <a href="tel:+8801700000000" className="inline-flex items-center gap-3 bg-transparent p-0">
-              <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full bg-[#B7C95A] text-[#073B32]">
+              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#B7C95A] text-[#073B32]">
                 <Phone className="h-5 w-5" />
               </span>
               <span className="leading-[1.2]">
-                <span className="block text-xs font-semibold tracking-[0.08em] text-[#073B32]">PHONE:</span>
-                <span className="mt-0.5 block text-lg font-bold text-[#111827]">+880 1700-000000</span>
+                <span className="block text-[11px] font-bold tracking-[0.08em] text-[#073B32]">PHONE:</span>
+                <span className="mt-0.5 block text-base font-extrabold text-[#111827]">+880 1700-000000</span>
               </span>
             </a>
 
@@ -235,9 +246,10 @@ export function Navbar() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="mt-auto inline-flex h-14 w-full items-center justify-center rounded-none bg-[#073B32] text-sm font-bold text-white transition-colors duration-300 hover:bg-[#0B3A35]"
+            className="mt-auto inline-flex h-14 w-full items-center justify-center rounded-sm bg-[#073B32] text-sm font-bold transition-colors duration-300 hover:bg-[#0B3A35]"
+            style={{ color: "#FFFFFF" }}
           >
-            Contact Now
+            <span style={{ color: "#FFFFFF" }}>Contact Now</span>
           </Link>
         </aside>
       </div>

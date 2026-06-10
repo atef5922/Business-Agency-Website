@@ -11,7 +11,7 @@ import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Explore Multitech Solution services including consulting, custom software, ERP, CRM, automation, cloud, and analytics."
+  description: "Explore Inovexa services including consulting, custom software, ERP, CRM, automation, cloud, and analytics."
 };
 
 export default function ServicesPage() {

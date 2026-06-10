@@ -1,6 +1,6 @@
 export const faqs = [
   {
-    question: "What services does Multitech Solution provide?",
+    question: "What services does Inovexa provide?",
     answer: "We provide business consulting, software development, web and mobile applications, ERP and CRM solutions, automation, cloud planning, and analytics."
   },
   {
