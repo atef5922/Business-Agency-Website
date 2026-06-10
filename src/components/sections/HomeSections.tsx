@@ -166,19 +166,6 @@ export function HomeSections() {
         </Container>
       </section>
 
-      <section id="trust" className="overflow-hidden border-y border-[#E5E7EB] bg-white py-14 sm:py-20 lg:py-24">
-        <Container>
-          <p className="mb-6 text-center text-sm font-bold uppercase tracking-[0.16em] text-[#6B7280]">Trusted by growing businesses, startups, SMEs, and enterprises</p>
-        </Container>
-        <div className="marquee-track flex w-[200%] gap-6">
-          {Array.from({ length: 12 }).map((_, index) => (
-            <div key={index} className="grid h-16 min-w-52 place-items-center rounded-2xl border border-[#E5E7EB] bg-[#F7F7F3] text-sm font-black uppercase tracking-[0.2em] text-[#6B7280] grayscale">
-              Client {index % 6 + 1}
-            </div>
-          ))}
-        </div>
-      </section>
-
       <MotionSection className="soft-section">
         <SectionPattern />
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">

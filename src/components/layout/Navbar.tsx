@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Facebook, Instagram, Linkedin, Menu, Phone, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Facebook, Instagram, Linkedin, Menu, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { services } from "@/data/services";
 import { TopBar } from "@/components/layout/TopBar";
@@ -40,7 +40,18 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const scrollTop =
+          window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        setScrolled(scrollTop > 50);
+        ticking = false;
+      });
+    };
+
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -55,12 +66,26 @@ export function Navbar() {
 
   return (
     <>
+      <style jsx>{`
+        @keyframes contactNowShine {
+          0% {
+            transform: translateX(-130%);
+          }
+          50% {
+            transform: translateX(290%);
+          }
+          100% {
+            transform: translateX(290%);
+          }
+        }
+      `}</style>
+
       <div className="sticky top-0 z-[100] overflow-x-clip bg-white">
         <div
           className={`overflow-hidden border-b border-[#E5E7EB] bg-white transition-all duration-300 ease-out ${
             scrolled
-              ? "pointer-events-none h-0 -translate-y-full opacity-0"
-              : "h-[40px] translate-y-0 opacity-100"
+              ? "pointer-events-none h-0 max-h-0 -translate-y-full border-b-0 opacity-0"
+              : "h-[40px] max-h-[40px] translate-y-0 opacity-100"
           }`}
         >
           <TopBar />
@@ -129,7 +154,7 @@ export function Navbar() {
               </div>
             </nav>
 
-            <div className="relative z-20 flex w-auto shrink-0 items-center justify-end gap-6 lg:w-full lg:max-w-[460px]">
+            <div className="relative z-20 flex w-auto shrink-0 items-center justify-end gap-[20px] lg:w-full lg:max-w-[460px]">
               <a
                 href="tel:+8801700000000"
                 className="hidden min-w-0 items-center gap-[12px] bg-transparent p-0 xl:flex"
@@ -137,18 +162,32 @@ export function Navbar() {
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-[#B7C95A] text-[#073B32]">
                   <Phone className="h-6 w-6" />
                 </span>
-                <span className="min-w-0 leading-[1.2]">
-                  <span className="block text-[11px] font-bold tracking-[0.08em] text-[#073B32]">PHONE:</span>
-                  <span className="mt-0.5 block text-base font-extrabold text-[#111827]">+880 1700-000000</span>
+                <span className="min-w-0 leading-[1.2] whitespace-nowrap">
+                  <span className="block text-[18px] font-[700] text-[#111827]">+880 1700-000000</span>
                 </span>
               </a>
 
               <Link
                 href="/contact"
-                className="hidden h-[52px] w-[170px] shrink-0 items-center justify-center rounded-sm bg-[#073B32] text-sm font-bold transition-colors duration-300 hover:bg-[#0B3A35] lg:inline-flex"
-                style={{ color: "#FFFFFF" }}
+                className="group hidden h-[56px] w-[190px] shrink-0 items-center justify-center gap-2 overflow-hidden rounded-[12px] border border-[rgba(255,255,255,0.12)] bg-[linear-gradient(135deg,#073B32_0%,#0B4A42_100%)] bg-[length:100%_100%] text-[15px] font-bold leading-none tracking-[0.02em] text-white shadow-[0_10px_30px_rgba(7,59,50,0.22)] transition-all duration-300 lg:inline-flex hover:-translate-y-[2px] hover:bg-[linear-gradient(135deg,#0D574B_0%,#137062_100%)] hover:shadow-[0_16px_35px_rgba(7,59,50,0.28)] active:scale-[0.98]"
+                aria-label="Contact now"
               >
-                <span style={{ color: "#FFFFFF" }}>Contact Now</span>
+                <span className="relative z-10 text-[#FFFFFF]">Contact Now</span>
+                <span
+                  className="relative z-10 inline-flex text-white transition-transform duration-300 group-hover:translate-x-[3px]"
+                  aria-hidden="true"
+                >
+                  <ArrowRight className="h-4 w-4" />
+                </span>
+                <span className="pointer-events-none absolute inset-[1px] rounded-[11px] border border-white/15" />
+                <span className="pointer-events-none absolute inset-x-0 top-0 h-[38%] bg-gradient-to-b from-white/25 to-transparent opacity-60" />
+                <span
+                  className="pointer-events-none absolute inset-0 -z-10 rounded-[12px] bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.08)] to-transparent"
+                  style={{
+                    animation: "contactNowShine 2.5s linear infinite",
+                    width: "45%"
+                  }}
+                />
               </Link>
 
               <button
