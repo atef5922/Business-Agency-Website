@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, Cog, ShieldCheck, Server, Users } from "lucide-react";
+import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, Cog, ShieldCheck, Server, Target, Users } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { TeamCard } from "@/components/cards/TeamCard";
 import { Container } from "@/components/shared/Container";
@@ -236,8 +236,14 @@ export function HomeSections() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="flex shrink-0 items-center gap-[14px] whitespace-nowrap"
               >
-                <span className="grid h-14 w-14 shrink-0 place-items-center rounded-full border-[2px] border-[#B7C95A] bg-transparent text-[#111827] shadow-[0_8px_20px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_22px_rgba(0,0,0,0.12)]">
-                  <span className="text-xs font-semibold tracking-[0.12em] text-[#111827]">MD</span>
+                <span className="grid h-14 w-14 shrink-0 place-items-center overflow-hidden rounded-full border-[2px] border-[#B7C95A] bg-white text-[#111827] shadow-[0_6px_16px_rgba(0,0,0,0.08)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_10px_22px_rgba(0,0,0,0.12)]">
+                  <Image
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+                    alt="Founder portrait of Michel Devid"
+                    width={56}
+                    height={56}
+                    className="h-full w-full rounded-full object-cover"
+                  />
                 </span>
                 <span className="leading-none">
                   <span className="block whitespace-nowrap text-[30px] font-medium italic leading-none text-[#111827]" style={{ fontFamily: "'Playfair Display', 'Cormorant Garamond', serif" }}>
@@ -264,12 +270,12 @@ export function HomeSections() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className="group flex min-h-[120px] items-center gap-3.5 rounded-[18px] border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.06)] p-[22px] transition duration-300 hover:-translate-y-[4px] hover:border-[rgba(183,201,90,0.45)] hover:bg-[rgba(255,255,255,0.09)]"
+                  className="group flex min-h-[90px] max-h-[100px] min-w-[160px] max-w-[180px] items-center gap-3 rounded-[16px] border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.06)] p-[18px] transition duration-300 hover:-translate-y-[4px] hover:border-[rgba(183,201,90,0.45)] hover:bg-[rgba(255,255,255,0.09)]"
                 >
-                  <span className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-[14px] bg-[rgba(183,201,90,0.14)] transition duration-300 group-hover:bg-[rgba(183,201,90,0.22)]">
-                    <item.icon className="h-[42px] w-[42px] text-[#B7C95A]" />
+                  <span className="grid h-[44px] w-[44px] shrink-0 place-items-center rounded-[12px] bg-[rgba(183,201,90,0.14)] transition duration-300 group-hover:bg-[rgba(183,201,90,0.22)]">
+                    <item.icon className="h-[22px] w-[22px] text-[#B7C95A]" />
                   </span>
-                  <h3 className="text-[18px] font-black leading-[1.2] text-white">{item.title}</h3>
+                  <h3 className="text-[18px] font-bold leading-[1.2] text-white">{item.title}</h3>
                 </div>
               ))}
             </div>
@@ -307,11 +313,26 @@ export function HomeSections() {
         <Container className="relative text-center">
           <h2 className="mx-auto max-w-4xl text-balance text-4xl font-black leading-tight md:text-6xl">Building Digital Connections For Growth & Limitless Opportunities</h2>
           <div className="my-10 flex flex-wrap justify-center gap-5">
-            {["Trusted Clients", "Expert Team", "Smart Execution"].map((item) => (
-              <div key={item} className="glass-panel grid h-36 w-36 place-items-center rounded-full p-4 text-center text-sm font-black">{item}</div>
+            {[
+              { label: "Trusted Clients", icon: ShieldCheck },
+              { label: "Expert Team", icon: Users },
+              { label: "Smart Execution", icon: Target },
+            ].map((item) => (
+              <div
+                key={item.label}
+                className="glass-panel flex h-36 w-36 flex-col items-center justify-center gap-3 rounded-full p-4 text-center text-sm font-black"
+              >
+                <item.icon className="h-8 w-8 text-[#B7C95A]" />
+                <span>{item.label}</span>
+              </div>
             ))}
           </div>
-          <PrimaryButton href="/contact">Start Your Project</PrimaryButton>
+          <PrimaryButton
+            href="/contact"
+            className="!text-[#111827] h-14 px-[34px] py-0 text-[16px] font-extrabold tracking-[0.01em] hover:-translate-y-2 hover:bg-[#C7DB5D] hover:!text-[#111827] [&_svg]:h-[18px] [&_svg]:w-[18px] [&_svg]:text-[#111827] [&_svg]:stroke-[2.2px]"
+          >
+            Start Your Project
+          </PrimaryButton>
         </Container>
       </section>
 

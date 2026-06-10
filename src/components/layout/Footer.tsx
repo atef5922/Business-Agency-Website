@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
+import { ArrowRight, Facebook, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { services } from "@/data/services";
@@ -30,9 +30,10 @@ export function Footer() {
                 </Link>
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center rounded-[12px] border border-[#D1D5DB] bg-white px-6 py-3 text-sm font-extrabold text-[#111827] transition duration-300 hover:-translate-y-1 hover:bg-[#F7F7F3]"
+                  className="inline-flex h-[54px] items-center justify-center gap-2 rounded-[12px] border border-[#B7C95A] bg-white px-[28px] text-[15px] font-bold !text-[#111827] transition duration-300 ease-out hover:-translate-y-1 hover:border-[#B7C95A] hover:bg-[#F7F7F3] hover:!text-[#111827] hover:decoration-transparent"
                 >
                   Explore Services
+                  <ArrowRight className="h-4 w-4 !text-[#111827]" />
                 </Link>
               </div>
             </div>
