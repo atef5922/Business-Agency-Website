@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Linkedin, Mail, MapPin, Phone, Send, Sparkles, Twitter } from "lucide-react";
+import { Facebook, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { GradientMesh } from "@/components/shared/VisualEffects";
@@ -8,16 +8,57 @@ import { services } from "@/data/services";
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#072F2B] text-white">
-      <GradientMesh className="opacity-70" />
-      <Container className="relative py-20">
-        <div className="animated-border mb-16 grid gap-6 overflow-hidden rounded-[34px] border border-white/10 bg-[linear-gradient(135deg,rgba(7,59,50,.96),rgba(11,74,66,.82))] p-8 shadow-[0_30px_90px_rgba(7,59,50,.2)] md:grid-cols-[1fr_auto] md:items-center md:p-10">
-          <div>
-            <p className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-[0.18em] text-[#B7C95A]"><Sparkles className="h-4 w-4" /> Ready to Transform Your Business?</p>
-            <h2 className="text-3xl font-extrabold md:text-5xl">Let&apos;s build a smarter digital future together.</h2>
+      <div className="relative bg-[linear-gradient(135deg,rgba(11,58,53,.96),rgba(7,47,43,.98))]">
+        <GradientMesh />
+        <Container className="relative px-6 py-14 sm:py-16 lg:py-20">
+          <div className="grid gap-10 rounded-[36px] border border-white/15 bg-[#073F3A]/55 p-7 sm:p-10 lg:grid-cols-[1.15fr_0.85fr] lg:p-12">
+            <div>
+              <p className="mb-3 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-[#B7C95A]">
+                <span className="h-px w-8 bg-[#B7C95A]" /> Ready for enterprise-grade execution
+              </p>
+              <h2 className="text-balance text-3xl font-black leading-tight sm:text-4xl">
+                Build your next transformation roadmap with a partner that delivers with clarity and speed.
+              </h2>
+              <p className="mt-4 max-w-2xl text-white/75">
+                Tell us your priorities and we will align a practical delivery plan with timeline, governance, and post-launch support.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-full bg-[#B7C95A] px-6 py-3 text-sm font-extrabold text-[#072F2B] shadow-[0_16px_38px_rgba(183,201,90,.26)] transition hover:-translate-y-1 hover:bg-[#A9BD49]"
+                >
+                  Get Consultation
+                  <Send className="ml-2 h-4 w-4" />
+                </Link>
+                <Link
+                  href="/services"
+                  className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-extrabold text-white transition hover:border-[#B7C95A] hover:bg-white/15"
+                >
+                  Explore Services
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-[28px] border border-white/20 bg-white/8 p-6 backdrop-blur">
+              <p className="mb-3 text-sm font-black uppercase tracking-[0.14em] text-[#B7C95A]">Enterprise newsletter</p>
+              <p className="mb-5 text-sm text-white/75">Receive monthly strategy notes, product insights, and implementation playbooks.</p>
+              <form className="grid gap-3 sm:grid-cols-[1fr_auto]">
+                <label className="sr-only" htmlFor="newsletter-email">Email for newsletter</label>
+                <input
+                  id="newsletter-email"
+                  type="email"
+                  placeholder="Enter your work email"
+                  className="h-12 rounded-full border border-white/20 bg-white/12 px-5 text-white outline-none placeholder:text-white/55 focus:border-[#B7C95A] focus:ring-2 focus:ring-[#B7C95A]/30"
+                />
+                <button className="inline-flex items-center justify-center rounded-full bg-[#B7C95A] px-5 py-3 font-black text-[#072F2B] transition hover:bg-[#A9BD49]">
+                  Subscribe
+                </button>
+              </form>
+            </div>
           </div>
-          <Link href="/contact" className="shine rounded-full bg-[linear-gradient(135deg,#B7C95A,#A9BD49)] px-7 py-4 text-center text-sm font-extrabold text-[#111827] shadow-[0_16px_38px_rgba(7,47,43,.22)] transition duration-300 hover:-translate-y-1 hover:bg-[linear-gradient(135deg,#A9BD49,#B7C95A)]">Contact Us</Link>
-        </div>
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+        </Container>
+      </div>
+      <Container className="relative py-16">
+        <div className="grid gap-10 border-t border-white/10 pt-12 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
           <div>
             <div className="mb-4">
               <BrandLogo variant="footer" />
@@ -26,7 +67,12 @@ export function Footer() {
             <p className="mt-3 text-sm font-semibold tracking-[0.06em] text-[#B7C95A]">Innovate. Automate. Grow.</p>
             <div className="mt-6 flex gap-3">
               {[Facebook, Twitter, Linkedin].map((Icon, index) => (
-                <a key={index} href="#" className="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:-translate-y-1 hover:bg-[#B7C95A] hover:text-[#072F2B]" aria-label="Social profile">
+                <a
+                  key={index}
+                  href="#"
+                  className="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition hover:-translate-y-1 hover:bg-[#B7C95A] hover:text-[#072F2B]"
+                  aria-label="Social profile"
+                >
                   <Icon className="h-4 w-4" />
                 </a>
               ))}
@@ -35,27 +81,51 @@ export function Footer() {
           <div>
             <h4 className="mb-4 font-extrabold">Quick Links</h4>
             {["About", "Services", "Projects", "Blog", "Team", "Contact"].map((item) => (
-              <Link key={item} href={`/${item.toLowerCase()}`} className="mb-3 block text-white/70 transition hover:text-[#B7C95A]">{item}</Link>
+              <Link
+                key={item}
+                href={`/${item.toLowerCase()}`}
+                className="mb-3 block text-white/70 transition hover:text-[#B7C95A]"
+              >
+                {item}
+              </Link>
             ))}
           </div>
           <div>
             <h4 className="mb-4 font-extrabold">Services</h4>
             {services.slice(0, 5).map((service) => (
-              <Link key={service.slug} href={`/services/${service.slug}`} className="mb-3 block text-white/70 transition hover:text-[#B7C95A]">{service.title}</Link>
+              <Link
+                key={service.slug}
+                href={`/services/${service.slug}`}
+                className="mb-3 block text-white/70 transition hover:text-[#B7C95A]"
+              >
+                {service.title}
+              </Link>
             ))}
           </div>
           <div>
             <h4 className="mb-4 font-extrabold">Contact</h4>
-            <p className="mb-3 flex gap-3 text-white/70"><MapPin className="mt-1 h-4 w-4 text-[#B7C95A]" /> Dhaka, Bangladesh</p>
-            <p className="mb-3 flex gap-3 text-white/70"><Phone className="mt-1 h-4 w-4 text-[#B7C95A]" /> +880 1700-000000</p>
-            <p className="mb-6 flex gap-3 text-white/70"><Mail className="mt-1 h-4 w-4 text-[#B7C95A]" /> info@inovexa.com</p>
-            <form className="flex overflow-hidden rounded-full border border-white/10 bg-white">
-              <input aria-label="Newsletter email" placeholder="Email address" className="min-w-0 flex-1 px-5 text-sm text-[#111827] outline-none" />
-              <button aria-label="Subscribe" className="grid h-12 w-12 place-items-center bg-[linear-gradient(135deg,#B7C95A,#A9BD49)] text-[#111827] shadow-[0_14px_30px_rgba(7,47,43,.2)] transition hover:scale-105"><Send className="h-4 w-4" /></button>
-            </form>
+            <p className="mb-3 flex gap-3 text-white/70">
+              <MapPin className="mt-1 h-4 w-4 text-[#B7C95A]" /> Dhaka, Bangladesh
+            </p>
+            <p className="mb-3 flex gap-3 text-white/70">
+              <Phone className="mt-1 h-4 w-4 text-[#B7C95A]" /> +880 1700-000000
+            </p>
+            <p className="mb-6 flex gap-3 text-white/70">
+              <Mail className="mt-1 h-4 w-4 text-[#B7C95A]" /> info@inovexa.com
+            </p>
+            <Link
+              href="/contact"
+              className="mt-2 inline-flex rounded-full bg-[#B7C95A] px-5 py-3 text-sm font-extrabold text-[#072F2B] transition hover:-translate-y-1"
+            >
+              Contact Us
+              <Send className="ml-2 h-4 w-4" />
+            </Link>
           </div>
         </div>
-        <div className="mt-12 border-t border-white/10 pt-6 text-sm text-white/60">Copyright 2026 Inovexa. All rights reserved.</div>
+        <div className="mt-12 border-t border-white/10 pt-6 text-sm text-white/60">
+          <p>Copyright 2026 Inovexa. All rights reserved.</p>
+          <p className="mt-2 text-xs text-white/45">A trusted digital transformation partner for growth-stage and enterprise organizations.</p>
+        </div>
       </Container>
     </footer>
   );

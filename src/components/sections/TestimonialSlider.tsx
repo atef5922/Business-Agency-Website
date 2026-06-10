@@ -31,30 +31,68 @@ export function TestimonialSlider() {
     <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex gap-6">
-          {testimonials.map((item) => (
-            <article key={item.name} className="premium-card relative min-w-0 flex-[0_0_100%] rounded-[34px] p-8 md:flex-[0_0_58%] lg:flex-[0_0_48%]">
-              <Quote className="absolute right-8 top-8 h-12 w-12 text-[#134E4A]/10" />
-              <span className="mb-5 inline-flex rounded-full bg-[#134E4A] px-4 py-2 text-xs font-black text-white">Digital Transformation Project</span>
-              <div className="mb-6 flex gap-1 text-[#B7C95A]">{Array.from({ length: 5 }).map((_, i) => <Star key={i} className="h-5 w-5 fill-current drop-shadow-sm" />)}</div>
-              <p className="mb-8 text-xl font-semibold leading-9 text-[#111827]">&quot;{item.quote}&quot;</p>
-              <div className="flex items-center gap-4">
-                <Image src={item.image} alt={item.name} width={64} height={64} className="h-16 w-16 rounded-full object-cover" />
-                <div>
-                  <h3 className="font-black">{item.name}</h3>
-                  <p className="text-sm text-[#6B7280]">{item.company}</p>
+          {testimonials.map((item) => {
+            const rating = item.rating ?? 5;
+            return (
+              <article
+                key={item.name}
+                className="relative min-w-0 flex-[0_0_100%] rounded-[34px] border border-[#E5E7EB] bg-white p-8 md:flex-[0_0_62%] lg:flex-[0_0_50%]"
+              >
+                <Quote className="absolute right-8 top-8 h-12 w-12 text-[#134E4A]/10" />
+                <div className="mb-5 flex items-center justify-between gap-4">
+                  <span className="inline-flex rounded-full bg-[#134E4A] px-4 py-2 text-xs font-black text-white">{item.category ?? "Digital Transformation"}</span>
+                  <span className="grid h-10 w-10 place-items-center rounded-full border border-[#E5E7EB] bg-[#F7F7F3] text-xs font-black text-[#111827]">{item.logo}</span>
                 </div>
-              </div>
-            </article>
-          ))}
+                <div className="mb-6 flex gap-1 text-[#B7C95A]">
+                  {Array.from({ length: rating }).map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-current drop-shadow-sm" />
+                  ))}
+                </div>
+                <p className="mb-8 text-xl font-semibold leading-9 text-[#111827]">&ldquo;{item.quote}&rdquo;</p>
+                <div className="mb-6 grid gap-2 text-xs font-black uppercase tracking-[0.13em] text-[#111827]/65">
+                  <span className="inline-flex h-6 w-fit items-center gap-2 rounded-full border border-[#B7C95A]/45 bg-[#B7C95A]/10 px-3 py-1 text-[#072F2B]">
+                    Project category: {item.category ?? "Digital Transformation"}
+                  </span>
+                  {item.result ? <span className="inline-flex h-6 w-fit items-center gap-2 rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-3 py-1">Result: {item.result}</span> : null}
+                </div>
+                <div className="flex items-center gap-4">
+                  <Image src={item.image} alt={item.name} width={64} height={64} className="h-16 w-16 rounded-full object-cover" />
+                  <div>
+                    <h3 className="font-black">{item.name}</h3>
+                    <p className="text-sm text-[#6B7280]">{item.company}</p>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
-      <div className="mt-8 flex gap-3">
-        <button aria-label="Previous testimonial" onClick={() => emblaApi?.scrollPrev()} className="grid h-12 w-12 place-items-center rounded-full border border-[#E5E7EB] bg-white text-[#134E4A]"><ArrowLeft className="h-5 w-5" /></button>
-        <button aria-label="Next testimonial" onClick={() => emblaApi?.scrollNext()} className="grid h-12 w-12 place-items-center rounded-full bg-[#134E4A] text-white"><ArrowRight className="h-5 w-5" /></button>
-        <div className="ml-3 flex items-center gap-2">{testimonials.map((item, index) => <button key={item.name} aria-label={`Go to testimonial ${index + 1}`} onClick={() => emblaApi?.scrollTo(index)} className={`h-2.5 rounded-full transition-all ${selected === index ? "w-8 bg-[#B7C95A]" : "w-2.5 bg-[#134E4A]/20"}`} />)}</div>
+      <div className="mt-5 flex flex-wrap items-center gap-3">
+        <button
+          aria-label="Previous testimonial"
+          onClick={() => emblaApi?.scrollPrev()}
+          className="grid h-12 w-12 place-items-center rounded-full border border-[#E5E7EB] bg-white text-[#134E4A] transition hover:text-[#B7C95A]"
+        >
+          <ArrowLeft className="h-5 w-5" />
+        </button>
+        <button
+          aria-label="Next testimonial"
+          onClick={() => emblaApi?.scrollNext()}
+          className="grid h-12 w-12 place-items-center rounded-full bg-[#134E4A] text-white transition hover:bg-[#0F4A44]"
+        >
+          <ArrowRight className="h-5 w-5" />
+        </button>
+        <div className="ml-auto flex items-center gap-2">
+          {testimonials.map((item, index) => (
+            <button
+              key={item.name}
+              aria-label={`Go to testimonial ${index + 1}`}
+              onClick={() => emblaApi?.scrollTo(index)}
+              className={`h-2.5 rounded-full transition-all ${selected === index ? "w-8 bg-[#B7C95A]" : "w-2.5 bg-[#134E4A]/20"}`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
 }
-
-

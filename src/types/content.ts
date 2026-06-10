@@ -37,4 +37,7 @@ export type TeamMember = {
   name: string;
   role: string;
   image: string;
+  experienceYears?: number;
+  expertise?: string[];
+  linkedin?: string;
 };

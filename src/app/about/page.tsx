@@ -17,7 +17,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main>
-      <PageHero label="About Us" title="A Technology Partner For Practical Business Growth" text="We help organizations modernize operations, build scalable systems, and make technology decisions with clarity." />
+      <PageHero
+        label="About Us"
+        title="A Technology Partner For Practical Business Growth"
+        text="We help organizations modernize operations, build scalable systems, and make technology decisions with clarity."
+      />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <Image src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1100&q=80" alt="Inovexa strategy team" width={900} height={650} className="rounded-3xl object-cover" />
@@ -63,5 +67,3 @@ export default function AboutPage() {
     </main>
   );
 }
-
-

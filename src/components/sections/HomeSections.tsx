@@ -65,18 +65,35 @@ export function HomeSections() {
     <>
       <section
         ref={heroRef}
-        className="relative min-h-[calc(100svh - 112px)] overflow-hidden bg-[#072F2B] text-white sm:min-h-[calc(100svh - 112px)] lg:min-h-[calc(100svh - 112px)]"
+        className="relative min-h-[calc(100svh - 112px)] overflow-hidden bg-[#073B32] text-white sm:min-h-[calc(100svh - 112px)] lg:min-h-[calc(100svh - 112px)]"
       >
-        <Image src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80" alt="Modern business technology office" fill priority className="hero-bg object-cover saturate-0 grayscale contrast-95 opacity-65" sizes="100vw" />
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(7,47,43,.8),rgba(6,31,29,.88))]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(7,47,43,.4),rgba(6,31,29,.78))]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(255,255,255,0.05),transparent_32%),radial-gradient(circle_at_82%_30%,rgba(255,255,255,0.04),transparent_42%)]" />
-          <div className="absolute inset-0 image-overlay" />
-          <div className="absolute inset-0 hero-tech-pattern opacity-70" />
-          <span className="absolute inset-0 opacity-55" style={{ background: "radial-gradient(circle at 50% 52%, transparent 0%, rgba(6,31,29,.72) 72%)" }} />
+        <div className="absolute inset-0" style={{ zIndex: 0 }}>
+          <Image
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80"
+            alt="Modern business technology office"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+            style={{
+              filter: "grayscale(100%) contrast(1.08) brightness(0.95)"
+            }}
+          />
         </div>
-        <div className="pointer-events-none absolute inset-0">
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            zIndex: 10,
+            background: "linear-gradient(90deg, rgba(7,47,43,0.82) 0%, rgba(7,47,43,0.70) 35%, rgba(7,47,43,0.45) 65%, rgba(7,47,43,0.20) 100%)"
+          }}
+        />
+        <div
+          className="pointer-events-none absolute inset-0 hero-tech-pattern opacity-70"
+          style={{
+            zIndex: 20
+          }}
+        />
+        <div className="pointer-events-none absolute inset-0" style={{ zIndex: 30 }}>
           <span className="absolute -left-16 -top-12 hidden h-[500px] w-[500px] rounded-full border border-white/5 opacity-70 blur-[1px] lg:block" />
           <span className="absolute -right-24 top-16 hidden h-[360px] w-[360px] rounded-full border border-white/6 opacity-60 lg:block" />
           <span className="absolute left-1/3 top-2/5 hidden h-px w-56 bg-gradient-to-r from-transparent via-white/8 to-transparent lg:block" />
@@ -84,7 +101,7 @@ export function HomeSections() {
           <GradientMesh />
           <FloatingShapes />
         </div>
-        <Container className="relative grid min-h-[calc(100svh - 112px)] items-center gap-10 py-16 sm:min-h-[calc(100svh - 112px)] sm:py-20 lg:min-h-[calc(100svh - 112px)] lg:grid-cols-[minmax(0,1.02fr)_minmax(420px,.98fr)] lg:gap-12 lg:py-20">
+        <Container className="relative z-40 grid min-h-[calc(100svh - 112px)] items-center gap-10 py-16 sm:min-h-[calc(100svh - 112px)] sm:py-20 lg:min-h-[calc(100svh - 112px)] lg:grid-cols-[minmax(0,1.02fr)_minmax(420px,.98fr)] lg:gap-12 lg:py-20">
           <div className="max-w-4xl self-center lg:self-center">
             <p className="hero-stagger mb-5 inline-flex rounded-full border border-white/15 bg-white/10 px-5 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#B7C95A] backdrop-blur-xl">Transforming Businesses Through Technology</p>
             <h1 className="hero-stagger text-balance text-4xl font-black leading-[1.02] sm:text-5xl md:text-6xl lg:text-[5.2rem]">Transforming Business Challenges Into <span className="typing-highlight">Digital Success Stories</span></h1>
