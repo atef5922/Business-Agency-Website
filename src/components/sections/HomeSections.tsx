@@ -192,9 +192,15 @@ export function HomeSections() {
               const Icon = statIcons[index] ?? BadgeCheck;
               return (
                 <div key={stat.label} className="glass-panel rounded-[24px] p-5 transition duration-300 hover:-translate-y-2 hover:border-[#B7C95A]/50">
-                <Icon className="mb-4 h-6 w-6 text-[#B7C95A]" />
-                <div className="text-3xl font-black text-[#B7C95A]"><AnimatedCounter value={stat.value} /></div>
-                <p className="mt-2 text-sm text-white/70">{stat.label}</p>
+                <div className="flex flex-col justify-center">
+                  <div className="flex items-center gap-2.5">
+                    <Icon className="h-6 w-6 text-[#B7C95A]" />
+                    <div className="text-[36px] font-black leading-none text-[#B7C95A]">
+                      <AnimatedCounter value={stat.value} />
+                    </div>
+                  </div>
+                  <p className="mt-1.5 text-sm font-medium text-white/80">{stat.label}</p>
+                </div>
               </div>
             );
             })}

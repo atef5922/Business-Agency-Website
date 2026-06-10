@@ -128,18 +128,18 @@ export function Navbar() {
                   return (
                     <div
                       key={link.href}
-                      className="group relative inline-flex h-full items-center justify-center"
+                      className="group relative inline-flex h-full items-center justify-center pb-2.5 overflow-visible"
                     >
                       <Link
                         href={link.href}
-                        className={`relative inline-flex h-full min-w-0 items-center justify-center gap-[6px] whitespace-nowrap py-0 leading-[1] transition-colors duration-300 hover:text-[#073B32] ${
+                        className={`relative inline-flex min-w-0 items-center justify-center gap-[6px] whitespace-nowrap py-0 leading-[1] transition-colors duration-300 hover:text-[#073B32] ${
                           isActive ? "font-bold text-[#073B32]" : "font-semibold text-[#111827]"
                         }`}
                       >
                         {link.label}
                         {isServices ? <ChevronDown className="h-4 w-4 shrink-0" /> : null}
                         <span
-                          className={`pointer-events-none absolute left-1/2 bottom-[-10px] h-[3px] w-[32px] -translate-x-1/2 rounded-full bg-[#B7C95A] transition-[transform,opacity] duration-200 ease-out ${
+                          className={`pointer-events-none absolute left-1/2 bottom-[-8px] h-[3px] w-[32px] -translate-x-1/2 rounded-full bg-[#B7C95A] transition-[transform,opacity] duration-200 ease-out ${
                             isActive
                               ? "scale-x-100 opacity-100"
                               : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"

@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={plusJakarta.variable}>
-      <body className={plusJakarta.className}>
+    <html lang="en" className={plusJakarta.variable} suppressHydrationWarning>
+      <body className={plusJakarta.className} suppressHydrationWarning>
         <Navbar />
         {children}
         <FloatingActions />

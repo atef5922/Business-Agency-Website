@@ -2,54 +2,52 @@ import Link from "next/link";
 import { Facebook, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { BrandLogo } from "@/components/shared/BrandLogo";
-import { GradientMesh } from "@/components/shared/VisualEffects";
 import { services } from "@/data/services";
 
 export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#072F2B] text-white">
-      <div className="relative bg-[linear-gradient(135deg,rgba(11,58,53,.96),rgba(7,47,43,.98))]">
-        <GradientMesh />
-        <Container className="relative mb-10 px-6 py-14 sm:py-16 lg:pb-24 lg:pt-14">
-          <div className="grid gap-10 rounded-[24px] border border-[rgba(255,255,255,0.10)] bg-[rgba(255,255,255,0.03)] p-7 backdrop-blur-[10px] shadow-[inset_0_1px_0_rgba(255,255,255,0.08),0_25px_60px_rgba(0,0,0,0.22)] sm:p-10 lg:grid-cols-[1.15fr_0.85fr] lg:p-12">
+      <div className="relative bg-[#F7F7F3] py-20">
+        <Container className="relative mb-10 px-6 sm:px-8">
+          <div className="grid gap-10 rounded-[28px] border border-[#E5E7EB] bg-white p-10 shadow-[0_20px_60px_rgba(0,0,0,0.08)] sm:grid-cols-[1.15fr_0.85fr]">
             <div>
               <p className="mb-3 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.16em] text-[#B7C95A]">
                 <span className="h-px w-8 bg-[#B7C95A]" /> Ready for enterprise-grade execution
               </p>
-              <h2 className="text-balance text-3xl font-extrabold leading-tight tracking-[-0.02em] sm:text-4xl">
+              <h2 className="text-balance text-3xl font-extrabold leading-tight tracking-[-0.02em] text-[#111827] sm:text-4xl">
                 Build your next transformation roadmap with a partner that delivers with clarity and speed.
               </h2>
-              <p className="mt-4 max-w-2xl text-white/75">
+              <p className="mt-4 max-w-2xl text-[#6B7280]">
                 Tell us your priorities and we will align a practical delivery plan with timeline, governance, and post-launch support.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
                   href="/contact"
-                  className="shine inline-flex items-center justify-center rounded-full bg-[#B7C95A] px-6 py-3 text-sm font-extrabold text-[#072F2B] shadow-[0_20px_46px_rgba(183,201,90,.35)] transition duration-300 hover:-translate-y-1 hover:bg-[#A9BD49] relative overflow-hidden before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.34),transparent)] before:translate-x-[-140%] before:transition-transform before:duration-700 before:opacity-0 hover:before:translate-x-[140%] hover:before:opacity-70"
+                  className="inline-flex items-center justify-center rounded-[12px] bg-[#073B32] px-6 py-3 text-sm font-extrabold text-[#FFFFFF] transition duration-300 hover:-translate-y-1 hover:bg-[#0B4A42]"
                 >
                   Get Consultation
                   <Send className="ml-2 h-4 w-4" />
                 </Link>
                 <Link
                   href="/services"
-                  className="shine inline-flex items-center justify-center rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-extrabold text-white shadow-[0_14px_30px_rgba(255,255,255,0.10)] transition duration-300 hover:-translate-y-1 hover:border-[#B7C95A] hover:bg-white/15 relative overflow-hidden before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.34),transparent)] before:translate-x-[-140%] before:transition-transform before:duration-700 before:opacity-0 hover:before:translate-x-[140%] hover:before:opacity-70"
+                  className="inline-flex items-center justify-center rounded-[12px] border border-[#D1D5DB] bg-white px-6 py-3 text-sm font-extrabold text-[#111827] transition duration-300 hover:-translate-y-1 hover:bg-[#F7F7F3]"
                 >
                   Explore Services
                 </Link>
               </div>
             </div>
-            <div className="rounded-[18px] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.05)] p-6 backdrop-blur">
+            <div className="rounded-[20px] border border-[#E5E7EB] bg-[#F8F9F7] p-7">
               <p className="mb-3 text-sm font-black uppercase tracking-[0.14em] text-[#B7C95A]">Enterprise newsletter</p>
-              <p className="mb-5 text-sm text-white/75">Receive monthly strategy notes, product insights, and implementation playbooks.</p>
+              <p className="mb-5 text-sm text-[#6B7280]">Receive monthly strategy notes, product insights, and implementation playbooks.</p>
               <form className="grid gap-3 sm:grid-cols-[1fr_auto]">
                 <label className="sr-only" htmlFor="newsletter-email">Email for newsletter</label>
                 <input
                   id="newsletter-email"
                   type="email"
                   placeholder="Enter your work email"
-                  className="h-12 rounded-full border border-white/20 bg-white/12 px-5 text-white outline-none placeholder:text-white/55 focus:border-[#B7C95A] focus:ring-2 focus:ring-[#B7C95A]/30"
+                  className="h-12 rounded-[14px] border border-[#D1D5DB] bg-white px-5 text-[#111827] outline-none placeholder:text-[#9CA3AF] focus:border-[#B7C95A] focus:ring-2 focus:ring-[#B7C95A]/30"
                 />
-                <button className="shine inline-flex items-center justify-center rounded-full bg-[#B7C95A] px-5 py-3 font-black text-[#072F2B] shadow-[0_16px_34px_rgba(183,201,90,.28)] transition duration-300 hover:-translate-y-1 hover:bg-[#A9BD49] relative overflow-hidden before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.34),transparent)] before:translate-x-[-140%] before:transition-transform before:duration-700 before:opacity-0 hover:before:translate-x-[140%] hover:before:opacity-70"
+                <button className="inline-flex items-center justify-center rounded-[12px] bg-[#B7C95A] px-5 py-3 text-sm font-black text-[#073B32] shadow-[0_12px_30px_rgba(183,201,90,.28)] transition duration-300 hover:-translate-y-1 hover:bg-[#9eb84f]"
                 >
                   Subscribe
                 </button>
