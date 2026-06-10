@@ -4,7 +4,6 @@ import { BlogCard } from "@/components/cards/BlogCard";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PageHero } from "@/components/sections/PageHero";
 import { blogs } from "@/data/blogs";
 
 export const metadata: Metadata = {
@@ -16,7 +15,6 @@ export default function BlogPage() {
   const categories = ["All", ...Array.from(new Set(blogs.map((post) => post.category)))];
   return (
     <main>
-      <PageHero label="Blog" title="Insights For Smarter Digital Business Decisions" text="Practical articles on transformation, automation, software systems, and technology-led growth." />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container>
           <div className="mb-10 grid gap-5 rounded-3xl bg-white p-5 card-shadow md:grid-cols-[1fr_auto]">

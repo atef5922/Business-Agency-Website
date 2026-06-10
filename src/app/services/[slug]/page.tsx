@@ -6,7 +6,6 @@ import { ServiceCard } from "@/components/cards/ServiceCard";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PageHero } from "@/components/sections/PageHero";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { services } from "@/data/services";
 
@@ -28,7 +27,6 @@ export default async function ServiceDetailsPage({ params }: Props) {
 
   return (
     <main>
-      <PageHero label="Service Details" title={service.title} text={service.description} />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <Image src={service.image} alt={service.title} width={1000} height={700} className="rounded-3xl object-cover" />

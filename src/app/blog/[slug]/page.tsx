@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 import { BlogCard } from "@/components/cards/BlogCard";
 import { Container } from "@/components/shared/Container";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PageHero } from "@/components/sections/PageHero";
 import { blogs } from "@/data/blogs";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -26,7 +25,6 @@ export default async function BlogDetailsPage({ params }: Props) {
   const related = blogs.filter((item) => item.slug !== post.slug);
   return (
     <main>
-      <PageHero label={post.category} title={post.title} text={post.excerpt} />
       <article className="py-16 sm:py-20 lg:py-24">
         <Container className="max-w-4xl">
           <Image src={post.image} alt={post.title} width={1200} height={680} className="mb-10 h-[480px] w-full rounded-3xl object-cover" />
@@ -43,4 +41,3 @@ export default async function BlogDetailsPage({ params }: Props) {
     </main>
   );
 }
-

@@ -4,7 +4,6 @@ import { Container } from "@/components/shared/Container";
 import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { LightAccordion } from "@/components/sections/LightAccordion";
-import { PageHero } from "@/components/sections/PageHero";
 import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { faqs } from "@/data/faqs";
 import { services } from "@/data/services";
@@ -17,11 +16,6 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <main>
-      <PageHero
-        label="Services"
-        title="Technology Services Designed Around Business Outcomes"
-        text="Choose focused consulting and development services that improve efficiency, customer experience, and management visibility."
-      />
       <section className="py-16 sm:py-20 lg:py-24">
           <Container>
           <SectionHeader align="center" label="Service Grid" title="End-To-End Digital Business Capabilities" />

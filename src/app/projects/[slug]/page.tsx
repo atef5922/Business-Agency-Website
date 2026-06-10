@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PageHero } from "@/components/sections/PageHero";
 import { projects } from "@/data/projects";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -23,7 +22,6 @@ export default async function ProjectDetailsPage({ params }: Props) {
   if (!project) notFound();
   return (
     <main>
-      <PageHero label={project.category} title={project.title} text={project.summary} />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container>
           <Image src={project.image} alt={project.title} width={1400} height={760} className="h-[520px] w-full rounded-3xl object-cover" />

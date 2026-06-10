@@ -39,6 +39,22 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  const isActiveLink = (href: string) => {
+    if (href === "/") {
+      return pathname === "/";
+    }
+    if (href === "/services") {
+      return pathname.startsWith("/services");
+    }
+    if (href === "/projects") {
+      return pathname.startsWith("/projects");
+    }
+    if (href === "/blog") {
+      return pathname.startsWith("/blog");
+    }
+    return pathname === href;
+  };
+
   useEffect(() => {
     let ticking = false;
     const onScroll = () => {
@@ -107,20 +123,26 @@ export function Navbar() {
               <div className="flex h-full items-center gap-[28px]">
                 {links.map((link) => {
                   const isServices = link.label === "Services";
-                  const isActive = pathname === link.href;
+                  const isActive = isActiveLink(link.href);
 
                   return (
-                    <div key={link.href} className="group relative">
+                    <div key={link.href} className="group relative inline-flex items-center pb-[10px]">
                       <Link
                         href={link.href}
-                        className={`inline-flex h-full items-center gap-1 whitespace-nowrap border-b-2 border-transparent font-semibold leading-none text-[15px] text-[#111827] transition-colors duration-300 ${
-                          isActive ? "border-[#B7C95A] text-[#073B32]" : "hover:border-[#B7C95A] hover:text-[#073B32]"
+                        className={`relative inline-flex h-full min-w-0 items-center gap-1 whitespace-nowrap transition-colors duration-300 hover:text-[#073B32] ${
+                          isActive ? "font-bold text-[#073B32]" : "font-semibold text-[#111827]"
                         }`}
                       >
                         {link.label}
                         {isServices ? <ChevronDown className="h-4 w-4 shrink-0" /> : null}
+                        <span
+                          className={`pointer-events-none absolute left-1/2 bottom-[-8px] h-[3px] w-[32px] -translate-x-1/2 rounded-full bg-[#B7C95A] transition-[transform,opacity] duration-200 ease-out ${
+                            isActive
+                              ? "scale-x-100 opacity-100"
+                              : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+                          }`}
+                        />
                       </Link>
-
                       {isServices ? (
                         <div className="pointer-events-none invisible absolute left-1/2 top-full z-30 min-w-[340px] -translate-x-1/2 pt-2 opacity-0 transition-all duration-300 group-hover:visible group-hover:pointer-events-auto group-hover:opacity-100">
                           <div className="rounded-xl border border-[#E5E7EB] bg-white py-2 shadow-[0_16px_48px_rgba(7,59,43,0.16)]">
@@ -230,17 +252,17 @@ export function Navbar() {
           </div>
 
           <nav className="grid gap-1">
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="border-b border-[#E5E7EB] px-1 py-3 text-base font-semibold text-[#111827] transition-colors duration-300 hover:text-[#073B32]"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
+                {links.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className={`relative border-b border-[#E5E7EB] px-1 py-3 text-base transition-colors duration-300 ${isActiveLink(link.href) ? "border-l-2 border-l-[#B7C95A] bg-[rgba(183,201,90,0.12)] pl-4 text-[#073B32] font-bold" : "text-[#111827] font-semibold"} hover:text-[#073B32]`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
 
           <div className="mt-8 space-y-6 border-t border-[#E5E7EB] pt-6">
             <p className="text-xs font-semibold tracking-[0.08em] text-[#6B7280]">QUICK LINKS</p>

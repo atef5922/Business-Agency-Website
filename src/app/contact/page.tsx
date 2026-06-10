@@ -5,7 +5,6 @@ import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { LightAccordion } from "@/components/sections/LightAccordion";
-import { PageHero } from "@/components/sections/PageHero";
 import { faqs } from "@/data/faqs";
 
 export const metadata: Metadata = {
@@ -16,7 +15,6 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main>
-      <PageHero label="Contact" title="Start A Clear Conversation About Your Digital Growth" text="Tell us about your goals, workflow, and technology needs. We will help you identify the right next step." />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container>
           <div className="mb-12 grid gap-6 md:grid-cols-3">

@@ -3,7 +3,6 @@ import { ProjectCard } from "@/components/cards/ProjectCard";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PageHero } from "@/components/sections/PageHero";
 import { projects } from "@/data/projects";
 
 export const metadata: Metadata = {
@@ -15,7 +14,6 @@ export default function ProjectsPage() {
   const categories = ["All", ...Array.from(new Set(projects.map((project) => project.category)))];
   return (
     <main>
-      <PageHero label="Projects" title="Case Studies That Show Practical Technology Impact" text="Browse solution examples designed to improve sales, operations, customer service, reporting, and growth." />
       <section className="py-16 sm:py-20 lg:py-24">
         <Container>
           <SectionHeader label="Filterable Project Grid" title="Solutions Built For Business Progress" />

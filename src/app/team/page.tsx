@@ -4,7 +4,6 @@ import { TeamCard } from "@/components/cards/TeamCard";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton } from "@/components/shared/Buttons";
 import { SectionHeader } from "@/components/shared/SectionHeader";
-import { PageHero } from "@/components/sections/PageHero";
 import { team } from "@/data/team";
 
 export const metadata: Metadata = {
@@ -15,7 +14,6 @@ export const metadata: Metadata = {
 export default function TeamPage() {
   return (
     <main>
-      <PageHero label="Team" title="Experienced People Building Reliable Digital Systems" text="Our team brings together business consulting, software architecture, product design, and project management." />
       <section className="py-16 sm:py-20 lg:py-24"><Container><SectionHeader align="center" label="Expert Team" title="Meet The People Behind Our Digital Excellence" /><div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">{team.map((member) => <TeamCard key={member.name} member={member} />)}</div></Container></section>
       <section className="bg-white py-16 sm:py-20 lg:py-24">
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">

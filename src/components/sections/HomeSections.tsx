@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, CircleDollarSign, Mail, MapPin, Phone, ShieldCheck, Users } from "lucide-react";
-import { useEffect, useRef } from "react";
-import { IndustryCard } from "@/components/cards/IndustryCard";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { TeamCard } from "@/components/cards/TeamCard";
 import { Container } from "@/components/shared/Container";
 import { PrimaryButton, SecondaryButton } from "@/components/shared/Buttons";
@@ -18,23 +17,40 @@ import { PremiumBadge } from "@/components/shared/PremiumBadge";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { LightAccordion } from "@/components/sections/LightAccordion";
-import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
 import { TestimonialSlider } from "@/components/sections/TestimonialSlider";
 import { faqs } from "@/data/faqs";
-import { industries } from "@/data/industries";
 import { stats } from "@/data/stats";
 import { team } from "@/data/team";
 import { cn } from "@/lib/utils";
+
+type HomeHeroSlide = {
+  src: string;
+  alt: string;
+};
+
+const homeHeroSlides: HomeHeroSlide[] = [
+  { src: "/images/hero/hero-1.jpg", alt: "Business meeting with a professional team discussing growth plans" },
+  { src: "/images/hero/hero-2.jpg", alt: "Corporate strategy discussion with executives reviewing plans" },
+  { src: "/images/hero/hero-3.jpg", alt: "Professional team collaboration in a corporate office setting" },
+];
 
 const reveal = {
   hidden: { opacity: 0, y: 28 },
   show: { opacity: 1, y: 0 }
 };
 
-function MotionSection({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+function MotionSection({
+  children,
+  className = "",
+  id
+}: {
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+}) {
   const baseClass = cn("py-16 sm:py-20 lg:py-24", className);
   return (
-    <motion.section initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.16 }} variants={reveal} transition={{ duration: 0.55 }} className={baseClass}>
+    <motion.section id={id} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.16 }} variants={reveal} transition={{ duration: 0.55 }} className={baseClass}>
       {children}
     </motion.section>
   );
@@ -44,6 +60,8 @@ export function HomeSections() {
   const heroRef = useRef<HTMLElement | null>(null);
   const ctaRef = useRef<HTMLElement | null>(null);
   const statIcons = [ShieldCheck, BarChart3, Users, BadgeCheck];
+  const heroSlides = useMemo(() => homeHeroSlides, []);
+  const [activeHeroIndex, setActiveHeroIndex] = useState(0);
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -61,6 +79,14 @@ export function HomeSections() {
     return () => ctx.revert();
   }, []);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveHeroIndex((prev) => (prev + 1) % heroSlides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [heroSlides.length]);
+
   return (
     <>
       <section
@@ -68,17 +94,22 @@ export function HomeSections() {
         className="relative min-h-[calc(100svh - 112px)] overflow-hidden bg-[#073B32] text-white sm:min-h-[calc(100svh - 112px)] lg:min-h-[calc(100svh - 112px)]"
       >
         <div className="absolute inset-0" style={{ zIndex: 0 }}>
-          <Image
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80"
-            alt="Modern business technology office"
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-center"
-            style={{
-              filter: "grayscale(100%) contrast(1.08) brightness(0.95)"
-            }}
-          />
+          {heroSlides.map((slide, index) => (
+            <Image
+              key={`home-hero-${index}`}
+              src={slide.src}
+              alt={slide.alt}
+              fill
+              priority={index === 0}
+              sizes="100vw"
+              className="object-cover object-center"
+              style={{
+                opacity: activeHeroIndex === index ? 1 : 0,
+                filter: "grayscale(100%) contrast(1.08) brightness(0.95)",
+                transition: "opacity 1200ms ease",
+              }}
+            />
+          ))}
         </div>
         <div
           className="pointer-events-none absolute inset-0"
@@ -160,13 +191,13 @@ export function HomeSections() {
             );
             })}
           </div>
-          <a href="#trust" aria-label="Scroll to trust section" className="animated-scroll absolute bottom-5 left-1/2 hidden h-12 w-12 -translate-x-1/2 place-items-center rounded-full border border-white/25 bg-white/10 text-white backdrop-blur lg:grid">
+          <a href="#about-inovexa" aria-label="Scroll to about section" className="animated-scroll absolute bottom-5 left-1/2 hidden h-12 w-12 -translate-x-1/2 place-items-center rounded-full border border-white/25 bg-white/10 text-white backdrop-blur lg:grid">
             <ArrowDown className="h-5 w-5" />
           </a>
         </Container>
       </section>
 
-      <MotionSection className="soft-section">
+      <MotionSection id="about-inovexa" className="soft-section">
         <SectionPattern />
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="relative grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -260,14 +291,6 @@ export function HomeSections() {
 
       <MotionSection className="soft-section bg-white">
         <SectionPattern />
-        <Container>
-          <SectionHeader align="center" label="Our Process" title="From Idea To Scalable Digital Product" text="A structured delivery model keeps every project transparent, measurable, and ready for long-term support." />
-          <div className="mt-12"><ProcessTimeline /></div>
-        </Container>
-      </MotionSection>
-
-      <MotionSection className="soft-section bg-white">
-        <SectionPattern />
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div className="relative">
             <Image src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1000&q=80" alt="Technology consulting analytics session" width={900} height={650} className="rounded-3xl object-cover" />
@@ -277,14 +300,6 @@ export function HomeSections() {
             <SectionHeader label="Why Choose Inovexa" title="Driving Success Through Tailored Technology And Proven Expertise" />
             <div className="mt-8"><LightAccordion items={["Experienced Technology Team", "Custom Business Solutions", "Transparent Development Process", "Scalable & Secure Architecture", "Long-Term Support & Maintenance"].map((question) => ({ question, answer: "We combine business understanding, reliable engineering, and clear communication so every solution stays aligned with your growth goals." }))} /></div>
           </div>
-        </Container>
-      </MotionSection>
-
-      <MotionSection className="soft-section">
-        <SectionPattern />
-        <Container>
-          <SectionHeader align="center" label="Industries We Serve" title="Smart Digital Solutions For Every Business Sector" />
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">{industries.map((item) => <IndustryCard key={item.title} {...item} />)}</div>
         </Container>
       </MotionSection>
 
