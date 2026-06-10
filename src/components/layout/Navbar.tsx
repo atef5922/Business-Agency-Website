@@ -96,12 +96,12 @@ export function Navbar() {
         }
       `}</style>
 
-      <div className="sticky top-0 z-[100] overflow-x-clip bg-white">
+      <div className="sticky top-0 z-[9990] overflow-x-clip bg-white">
         <div
           className={`overflow-hidden border-b border-[#E5E7EB] bg-white transition-all duration-300 ease-out ${
             scrolled
-              ? "pointer-events-none h-0 max-h-0 -translate-y-full border-b-0 opacity-0"
-              : "h-[40px] max-h-[40px] translate-y-0 opacity-100"
+              ? "pointer-events-none h-0 max-h-0 opacity-0"
+              : "h-[40px] max-h-[40px] opacity-100"
           }`}
         >
           <TopBar />
@@ -113,13 +113,13 @@ export function Navbar() {
           }`}
         >
           <div
-            className={`${headerContainer} flex h-[72px] items-center justify-between lg:grid lg:h-[72px] ${headerColumns}`}
+            className={`${headerContainer} grid h-[72px] items-center lg:h-[72px] lg:grid ${headerColumns}`}
           >
             <Link href="/" className="relative z-20 flex h-full shrink-0 items-center" aria-label="Inovexa home">
               <BrandLogo />
             </Link>
 
-            <nav className="hidden min-w-0 flex-1 justify-center lg:flex">
+            <nav className="hidden min-w-0 lg:flex lg:justify-self-center">
               <div className="flex h-full items-center gap-[28px]">
                 {links.map((link) => {
                   const isServices = link.label === "Services";
@@ -176,7 +176,7 @@ export function Navbar() {
               </div>
             </nav>
 
-            <div className="relative z-20 flex w-auto shrink-0 items-center justify-end gap-[20px] lg:w-full lg:max-w-[460px]">
+            <div className="relative z-20 flex w-auto shrink-0 items-center justify-end gap-[20px] lg:w-auto">
               <a
                 href="tel:+8801700000000"
                 className="hidden min-w-0 items-center gap-[12px] bg-transparent p-0 xl:flex"

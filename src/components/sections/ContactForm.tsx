@@ -32,10 +32,10 @@ export function ContactForm() {
     reset();
   }
 
-  const field = "w-full rounded-2xl border border-[#E5E7EB] bg-white/90 px-5 py-4 text-[#111827] outline-none transition focus:border-[#B7C95A] focus:ring-4 focus:ring-[#B7C95A]/18";
+  const field = "h-12 w-full rounded-[12px] border border-[#E5E7EB] bg-white/90 px-5 text-sm text-[#111827] outline-none transition focus:border-[#B7C95A] focus:ring-2 focus:ring-[#B7C95A]/22";
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="rounded-[30px] border border-[#E5E7EB] bg-white p-6 md:p-8" noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} className="h-full rounded-[28px] border border-[#E5E7EB] bg-white p-6 shadow-[0_22px_55px_rgba(7,47,43,0.10)] md:p-8" noValidate>
       <p className="mb-2 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-[#B7C95A]"><span className="h-px w-8 bg-[#B7C95A]" /> Secure Consultation</p>
       <h2 className="mb-2 text-3xl font-black">Fill Up The Form</h2>
       <p className="mb-6 text-sm text-[#6B7280]">We usually respond within one business day with a tailored execution plan.</p>
@@ -47,7 +47,7 @@ export function ContactForm() {
           <li>&#8226; Project roadmap: drafted in week one</li>
         </ul>
       </div>
-      <div className="grid gap-5">
+      <div className="mt-2 grid gap-5">
         <label>
           <span className="mb-2 block text-sm font-bold">Full Name</span>
           <input className={field} {...register("name")} />
@@ -79,20 +79,15 @@ export function ContactForm() {
         </label>
         <label>
           <span className="mb-2 block text-sm font-bold">Message</span>
-          <textarea className={`${field} min-h-36 resize-y`} {...register("message")} />
+          <textarea className={`${field} min-h-36 resize-y py-3`} {...register("message")} />
           {errors.message ? <span className="mt-2 block text-sm text-red-600">{errors.message.message}</span> : null}
         </label>
         <button
           disabled={isSubmitting}
-          className="shine inline-flex items-center justify-center gap-2 rounded-full bg-[linear-gradient(135deg,#B7C95A,#A9BD49)] px-7 py-4 font-extrabold text-[#111827] shadow-[0_16px_40px_rgba(7,47,43,.24)] transition hover:-translate-y-1 hover:bg-[linear-gradient(135deg,#A9BD49,#B7C95A)] disabled:opacity-70"
+          className="shine inline-flex h-[54px] w-full items-center justify-center gap-2 rounded-full bg-[linear-gradient(135deg,#B7C95A,#A9BD49)] px-7 font-extrabold text-[#073B32] shadow-[0_16px_40px_rgba(7,59,50,.24)] transition hover:-translate-y-1 hover:bg-[linear-gradient(135deg,#A9BD49,#B7C95A)] disabled:opacity-70"
         >
           {isSubmitting ? "Sending..." : "Send Message"} {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
         </button>
-        <div className="flex flex-wrap gap-3 text-xs text-[#6B7280]">
-          <span className="rounded-full border border-[#E5E7EB] bg-white/85 px-3 py-1.5">Trusted by 8,000+ users</span>
-          <span className="rounded-full border border-[#E5E7EB] bg-white/85 px-3 py-1.5">Response time: <b className="text-[#111827]">24 hours</b></span>
-          <span className="rounded-full border border-[#E5E7EB] bg-white/85 px-3 py-1.5">Office hours: Sun-Thu, 10AM-7PM</span>
-        </div>
       </div>
       {success ? <p role="status" className="fixed bottom-6 right-6 z-50 rounded-2xl bg-[#F7F7F3] px-5 py-4 font-bold text-[#072F2B] shadow-2xl">Thank you. Your message has been received.</p> : null}
     </form>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, CircleDollarSign, Mail, MapPin, Phone, ShieldCheck, Users } from "lucide-react";
+import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, Clock, Mail, MapPin, Phone, ShieldCheck, Users } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { TeamCard } from "@/components/cards/TeamCard";
 import { Container } from "@/components/shared/Container";
@@ -16,7 +16,6 @@ import { TiltCard } from "@/components/shared/TiltCard";
 import { PremiumBadge } from "@/components/shared/PremiumBadge";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
-import { LightAccordion } from "@/components/sections/LightAccordion";
 import { TestimonialSlider } from "@/components/sections/TestimonialSlider";
 import { faqs } from "@/data/faqs";
 import { stats } from "@/data/stats";
@@ -138,8 +137,18 @@ export function HomeSections() {
             <h1 className="hero-stagger text-balance text-4xl font-black leading-[1.02] sm:text-5xl md:text-6xl lg:text-[5.2rem]">Transforming Business Challenges Into <span className="typing-highlight">Digital Success Stories</span></h1>
             <p className="hero-stagger mt-5 max-w-3xl text-base leading-8 text-white/80 sm:text-lg sm:leading-9">Inovexa helps organizations streamline operations, automate workflows, improve customer experience, and accelerate growth through modern technology solutions.</p>
             <div className="hero-stagger mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
-              <PrimaryButton href="/contact" className="w-full justify-center sm:w-auto">Get Free Consultation</PrimaryButton>
-              <SecondaryButton href="/services" className="w-full justify-center sm:w-auto">Explore Services</SecondaryButton>
+              <PrimaryButton
+                href="/contact"
+                className="w-full justify-center !text-black hover:!text-black sm:w-auto"
+              >
+                Get Free Consultation
+              </PrimaryButton>
+              <SecondaryButton
+                href="/services"
+                className="w-full justify-center font-black !text-black hover:!text-black sm:w-auto"
+              >
+                Explore Services
+              </SecondaryButton>
             </div>
           </div>
           <div className="hidden lg:block lg:self-center">
@@ -289,20 +298,6 @@ export function HomeSections() {
         </Container>
       </section>
 
-      <MotionSection className="soft-section bg-white">
-        <SectionPattern />
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div className="relative">
-            <Image src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=1000&q=80" alt="Technology consulting analytics session" width={900} height={650} className="rounded-3xl object-cover" />
-            <div className="absolute left-4 top-4 hidden rounded-3xl bg-white/90 p-5 shadow-2xl backdrop-blur-xl md:block"><CircleDollarSign className="mb-3 h-7 w-7 text-[#134E4A]" /><b>Transparent delivery with measurable value</b><div className="mt-4 flex h-10 items-end gap-1">{[35, 52, 44, 70, 58].map((h) => <span key={h} className="w-3 rounded-t bg-[#B7C95A]" style={{ height: `${h}%` }} />)}</div></div>
-          </div>
-          <div>
-            <SectionHeader label="Why Choose Inovexa" title="Driving Success Through Tailored Technology And Proven Expertise" />
-            <div className="mt-8"><LightAccordion items={["Experienced Technology Team", "Custom Business Solutions", "Transparent Development Process", "Scalable & Secure Architecture", "Long-Term Support & Maintenance"].map((question) => ({ question, answer: "We combine business understanding, reliable engineering, and clear communication so every solution stays aligned with your growth goals." }))} /></div>
-          </div>
-        </Container>
-      </MotionSection>
-
       <MotionSection className="bg-white">
         <Container>
           <SectionHeader align="center" label="Expert Team" title="Meet The People Behind Our Digital Excellence" />
@@ -361,21 +356,61 @@ export function HomeSections() {
       <MotionSection className="soft-section">
         <SectionPattern />
         <Container>
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-            <div className="min-h-[520px] rounded-3xl bg-[#134E4A] p-8 text-white">
-               <div className="relative grid h-full place-items-center overflow-hidden rounded-3xl border border-white/15 bg-[linear-gradient(135deg,#134E4A,#072F2B)] p-8 text-center hero-tech-pattern">
-                <span className="absolute left-8 top-8 rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm font-bold backdrop-blur">Office Hours: Sun-Thu, 10AM-7PM</span>
-                <div>
-                  <span className="relative mx-auto mb-5 grid h-20 w-20 place-items-center rounded-full bg-[#B7C95A]/15">
-                    <span className="absolute h-full w-full animate-ping rounded-full bg-[#B7C95A]/20" />
-                    <MapPin className="relative h-10 w-10 text-[#B7C95A]" />
+          <div className="grid gap-10 lg:grid-cols-[48%_52%] lg:items-stretch lg:gap-10">
+            <div className="flex h-full flex-col rounded-[24px] bg-gradient-to-br from-[#073B32] to-[#0B4A42] p-8 text-white shadow-[0_28px_70px_rgba(7,59,50,0.22)]">
+              <div className="mb-6 flex items-center justify-between">
+                <div className="relative">
+                  <span className="relative inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#B7C95A]/18">
+                    <MapPin className="h-5 w-5 text-[#B7C95A]" />
                   </span>
-                  <h3 className="text-3xl font-black">Dhaka Office</h3>
-                  <p className="mt-4 text-white/70">Map placeholder ready for future backend and location setup.</p>
+                  <span className="mt-3 block text-sm font-black uppercase tracking-[0.14em] text-[#B7C95A]">Office Location</span>
+                </div>
+                <span className="inline-flex rounded-full border border-[#B7C95A]/40 bg-white/10 px-3 py-1.5 text-xs font-black tracking-[0.12em] text-[#B7C95A]">Open Mon-Fri</span>
+              </div>
+              <h3 className="text-3xl font-black">Dhaka Office</h3>
+              <p className="mt-2 text-white/90">36-37 Umesh Datta Road<br />Bakshi Bazar<br />Dhaka, Bangladesh</p>
+
+              <div className="mt-8 grid gap-5 md:grid-cols-2">
+                <div className="rounded-2xl border border-white/15 bg-white/8 p-4">
+                  <p className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-[#B7C95A]">Contact Details</p>
+                  <p className="inline-flex items-center gap-2 text-sm"><Phone className="h-4 w-4 text-[#B7C95A]" /> +880 1700-000000</p>
+                  <p className="mt-2 inline-flex items-center gap-2 text-sm"><Mail className="h-4 w-4 text-[#B7C95A]" /> info@inovexa.com</p>
+                </div>
+                <div className="rounded-2xl border border-white/15 bg-white/8 p-4">
+                  <p className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-[#B7C95A]">Business Hours</p>
+                  <p className="inline-flex items-center gap-2 text-sm"><Clock className="h-4 w-4 text-[#B7C95A]" /> Saturday-Thursday</p>
+                  <p className="mt-1 text-sm text-white/90">10:00 AM - 7:00 PM</p>
                 </div>
               </div>
+
+              <div className="mt-8 min-h-[190px] overflow-hidden rounded-2xl border border-white/15 bg-white/8">
+                <div className="grid h-full place-items-center border border-white/5 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.16),_transparent_45%)] p-6 text-center">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[0.15em] text-[#B7C95A]">Location Card</p>
+                    <p className="mt-2 text-sm text-white/85">Dhaka Office<br />ready for map embed / branch information block</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-xs font-black tracking-[0.06em] text-white">
+                  <span className="h-2 w-2 rounded-full bg-[#B7C95A]" />
+                  Average Response: Within 2 Hours
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-xs font-black tracking-[0.06em] text-white">
+                  <span className="h-2 w-2 rounded-full bg-[#B7C95A]" />
+                  Free Consultation Available
+                </span>
+              </div>
             </div>
-            <ContactForm />
+            <div className="flex h-full flex-col">
+              <ContactForm />
+            </div>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <span className="rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-4 py-2 text-xs font-bold tracking-[0.06em] text-[#111827]">Trusted by 8,000+ users</span>
+            <span className="rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-4 py-2 text-xs font-bold tracking-[0.06em] text-[#111827]">Response Time: <b className="text-[#073B32]">24 Hours</b></span>
+            <span className="rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-4 py-2 text-xs font-bold tracking-[0.06em] text-[#111827]">Office Hours</span>
           </div>
         </Container>
       </MotionSection>

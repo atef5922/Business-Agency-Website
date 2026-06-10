@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "@/app/globals.css";
+import { FloatingActions } from "@/components/shared/FloatingActions";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={plusJakarta.className}>
         <Navbar />
         {children}
+        <FloatingActions />
         <Footer />
       </body>
     </html>
