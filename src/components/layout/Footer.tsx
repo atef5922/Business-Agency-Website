@@ -49,7 +49,8 @@ export function Footer() {
                   placeholder="Enter your work email"
                   className="h-12 rounded-full border border-white/20 bg-white/12 px-5 text-white outline-none placeholder:text-white/55 focus:border-[#B7C95A] focus:ring-2 focus:ring-[#B7C95A]/30"
                 />
-                <button className="shine inline-flex items-center justify-center rounded-full bg-[#B7C95A] px-5 py-3 font-black text-[#072F2B] shadow-[0_16px_34px_rgba(183,201,90,.28)] transition duration-300 hover:-translate-y-1 hover:bg-[#A9BD49] relative overflow-hidden before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.34),transparent)] before:translate-x-[-140%] before:transition-transform before:duration-700 before:opacity-0 hover:before:translate-x-[140%] hover:before:opacity-70">
+                <button className="shine inline-flex items-center justify-center rounded-full bg-[#B7C95A] px-5 py-3 font-black text-[#072F2B] shadow-[0_16px_34px_rgba(183,201,90,.28)] transition duration-300 hover:-translate-y-1 hover:bg-[#A9BD49] relative overflow-hidden before:absolute before:inset-0 before:-z-10 before:bg-[linear-gradient(120deg,transparent,rgba(255,255,255,.34),transparent)] before:translate-x-[-140%] before:transition-transform before:duration-700 before:opacity-0 hover:before:translate-x-[140%] hover:before:opacity-70"
+                >
                   Subscribe
                 </button>
               </form>

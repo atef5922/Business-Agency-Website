@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, Clock, Mail, MapPin, Phone, ShieldCheck, Users } from "lucide-react";
+import { ArrowDown, BadgeCheck, BarChart3, CheckCircle2, Cog, ShieldCheck, Server, Users } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { TeamCard } from "@/components/cards/TeamCard";
 import { Container } from "@/components/shared/Container";
@@ -14,7 +14,6 @@ import { FloatingShapes, GradientMesh, SectionPattern } from "@/components/share
 import { AnimatedCounter } from "@/components/shared/AnimatedCounter";
 import { TiltCard } from "@/components/shared/TiltCard";
 import { PremiumBadge } from "@/components/shared/PremiumBadge";
-import { ContactForm } from "@/components/sections/ContactForm";
 import { FAQAccordion } from "@/components/sections/FAQAccordion";
 import { TestimonialSlider } from "@/components/sections/TestimonialSlider";
 import { faqs } from "@/data/faqs";
@@ -251,9 +250,21 @@ export function HomeSections() {
         <Container className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <SectionHeader dark label="Innovation & Growth" title="Empowering Your Brand With Innovative Digital Solutions" text="We combine consulting, automation, software engineering, and analytics to help companies move faster without losing operational control." />
-            <div className="mt-8 grid gap-5 md:grid-cols-3">
-              {["Digital Strategy", "Business Automation", "Scalable Software"].map((item) => (
-                <div key={item} className="glass-panel rounded-3xl p-6 transition duration-300 hover:-translate-y-2 hover:border-[#B7C95A]/60"><h3 className="font-black">{item}</h3><p className="mt-3 text-sm leading-6 text-white/65">Practical technology execution for measurable business progress.</p></div>
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                { title: "Digital Strategy", icon: BarChart3 },
+                { title: "Business Automation", icon: Cog },
+                { title: "Scalable Software", icon: Server }
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="group flex min-h-[120px] items-center gap-3.5 rounded-[18px] border border-[rgba(255,255,255,0.14)] bg-[rgba(255,255,255,0.06)] p-[22px] transition duration-300 hover:-translate-y-[4px] hover:border-[rgba(183,201,90,0.45)] hover:bg-[rgba(255,255,255,0.09)]"
+                >
+                  <span className="grid h-[52px] w-[52px] shrink-0 place-items-center rounded-[14px] bg-[rgba(183,201,90,0.14)] transition duration-300 group-hover:bg-[rgba(183,201,90,0.22)]">
+                    <item.icon className="h-[42px] w-[42px] text-[#B7C95A]" />
+                  </span>
+                  <h3 className="text-[18px] font-black leading-[1.2] text-white">{item.title}</h3>
+                </div>
               ))}
             </div>
           </div>
@@ -312,108 +323,33 @@ export function HomeSections() {
         </Container>
       </MotionSection>
 
-      <MotionSection className="relative overflow-hidden bg-[#072F2B]">
+      <MotionSection className="relative overflow-hidden bg-[#072F2B] !py-14 md:py-20">
         <GradientMesh />
-        <Container className="grid gap-12 lg:grid-cols-2 lg:items-start">
+        <Container className="mx-auto max-w-[1200px] px-6 lg:px-8">
+          <div className="grid gap-16 lg:grid-cols-[42%_58%] lg:items-center">
           <div>
-            <div className="relative mb-8 overflow-hidden rounded-[32px]">
-              <Image src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=1000&q=80" alt="Support team answering business technology questions" width={900} height={580} className="rounded-[32px] object-cover grayscale" />
-              <div className="absolute inset-0 bg-[#072F2B]/30" />
+            <SectionHeader dark label="FAQ" title="Frequently Asked Questions" text="Get clear answers about our consulting, development, automation, and support services." />
+            <div className="relative mt-8 mb-4 h-[300px] overflow-hidden rounded-[18px]">
+              <Image
+                src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?auto=format&fit=crop&w=1000&q=80"
+                alt="Support team answering business technology questions"
+                fill
+                className="grayscale object-cover"
+                sizes="(max-width: 1024px) 100vw, 42vw"
+              />
+              <div className="absolute inset-0 rounded-[18px] bg-[#072F2B]/35" />
               <PremiumBadge className="absolute bottom-5 left-5">Priority Support</PremiumBadge>
             </div>
-            <SectionHeader dark label="FAQ" title="Frequently Asked Questions" text="Get clear answers about our consulting, development, automation, and support services." />
-            <div className="mt-8 rounded-3xl border border-[#B7C95A]/25 bg-[#B7C95A]/10 p-6 text-white">
+            <div className="rounded-3xl border border-[#B7C95A]/25 bg-[#B7C95A]/10 px-5 py-4 text-white">
               <h3 className="text-xl font-black">Still have questions?</h3>
               <p className="mt-2 text-white/70">Contact our team for a focused consultation around your business goals.</p>
             </div>
           </div>
           <FAQAccordion items={faqs} />
-        </Container>
-      </MotionSection>
-
-      <MotionSection className="bg-white">
-        <Container>
-          <SectionHeader align="center" label="Contact Info" title="Need a premium digital partner?" />
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {[
-              { icon: MapPin, title: "Address", text: "Dhaka, Bangladesh" },
-              { icon: Phone, title: "Phone", text: "+880 1700-000000" },
-              { icon: Mail, title: "Email", text: "info@inovexa.com" }
-            ].map((item) => {
-              const Icon = item.icon;
-              return (
-                <div key={item.title} className="premium-card rounded-[28px] p-7 transition hover:-translate-y-2">
-                  <Icon className="mb-4 h-7 w-7 text-[#134E4A]" />
-                  <h3 className="font-black">{item.title}</h3>
-                  <p className="mt-2 text-[#6B7280]">{item.text}</p>
-                </div>
-              );
-            })}
           </div>
         </Container>
       </MotionSection>
 
-      <MotionSection className="soft-section">
-        <SectionPattern />
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[48%_52%] lg:items-stretch lg:gap-10">
-            <div className="flex h-full flex-col rounded-[24px] bg-gradient-to-br from-[#073B32] to-[#0B4A42] p-8 text-white shadow-[0_28px_70px_rgba(7,59,50,0.22)]">
-              <div className="mb-6 flex items-center justify-between">
-                <div className="relative">
-                  <span className="relative inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#B7C95A]/18">
-                    <MapPin className="h-5 w-5 text-[#B7C95A]" />
-                  </span>
-                  <span className="mt-3 block text-sm font-black uppercase tracking-[0.14em] text-[#B7C95A]">Office Location</span>
-                </div>
-                <span className="inline-flex rounded-full border border-[#B7C95A]/40 bg-white/10 px-3 py-1.5 text-xs font-black tracking-[0.12em] text-[#B7C95A]">Open Mon-Fri</span>
-              </div>
-              <h3 className="text-3xl font-black">Dhaka Office</h3>
-              <p className="mt-2 text-white/90">36-37 Umesh Datta Road<br />Bakshi Bazar<br />Dhaka, Bangladesh</p>
-
-              <div className="mt-8 grid gap-5 md:grid-cols-2">
-                <div className="rounded-2xl border border-white/15 bg-white/8 p-4">
-                  <p className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-[#B7C95A]">Contact Details</p>
-                  <p className="inline-flex items-center gap-2 text-sm"><Phone className="h-4 w-4 text-[#B7C95A]" /> +880 1700-000000</p>
-                  <p className="mt-2 inline-flex items-center gap-2 text-sm"><Mail className="h-4 w-4 text-[#B7C95A]" /> info@inovexa.com</p>
-                </div>
-                <div className="rounded-2xl border border-white/15 bg-white/8 p-4">
-                  <p className="mb-2 text-xs font-black uppercase tracking-[0.14em] text-[#B7C95A]">Business Hours</p>
-                  <p className="inline-flex items-center gap-2 text-sm"><Clock className="h-4 w-4 text-[#B7C95A]" /> Saturday-Thursday</p>
-                  <p className="mt-1 text-sm text-white/90">10:00 AM - 7:00 PM</p>
-                </div>
-              </div>
-
-              <div className="mt-8 min-h-[190px] overflow-hidden rounded-2xl border border-white/15 bg-white/8">
-                <div className="grid h-full place-items-center border border-white/5 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.16),_transparent_45%)] p-6 text-center">
-                  <div>
-                    <p className="text-xs font-black uppercase tracking-[0.15em] text-[#B7C95A]">Location Card</p>
-                    <p className="mt-2 text-sm text-white/85">Dhaka Office<br />ready for map embed / branch information block</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-3">
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-xs font-black tracking-[0.06em] text-white">
-                  <span className="h-2 w-2 rounded-full bg-[#B7C95A]" />
-                  Average Response: Within 2 Hours
-                </span>
-                <span className="inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2 text-xs font-black tracking-[0.06em] text-white">
-                  <span className="h-2 w-2 rounded-full bg-[#B7C95A]" />
-                  Free Consultation Available
-                </span>
-              </div>
-            </div>
-            <div className="flex h-full flex-col">
-              <ContactForm />
-            </div>
-          </div>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-4 py-2 text-xs font-bold tracking-[0.06em] text-[#111827]">Trusted by 8,000+ users</span>
-            <span className="rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-4 py-2 text-xs font-bold tracking-[0.06em] text-[#111827]">Response Time: <b className="text-[#073B32]">24 Hours</b></span>
-            <span className="rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-4 py-2 text-xs font-bold tracking-[0.06em] text-[#111827]">Office Hours</span>
-          </div>
-        </Container>
-      </MotionSection>
     </>
   );
 }

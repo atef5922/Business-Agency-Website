@@ -113,30 +113,33 @@ export function Navbar() {
           }`}
         >
           <div
-            className={`${headerContainer} grid h-[72px] items-center lg:h-[72px] lg:grid ${headerColumns}`}
+            className={`${headerContainer} flex items-center justify-between h-[72px] lg:grid lg:h-[72px] ${headerColumns}`}
           >
             <Link href="/" className="relative z-20 flex h-full shrink-0 items-center" aria-label="Inovexa home">
               <BrandLogo />
             </Link>
 
-            <nav className="hidden min-w-0 lg:flex lg:justify-self-center">
+            <nav className="hidden min-w-0 lg:flex lg:items-center lg:justify-self-center lg:h-full">
               <div className="flex h-full items-center gap-[28px]">
                 {links.map((link) => {
                   const isServices = link.label === "Services";
                   const isActive = isActiveLink(link.href);
 
                   return (
-                    <div key={link.href} className="group relative inline-flex items-center pb-[10px]">
+                    <div
+                      key={link.href}
+                      className="group relative inline-flex h-full items-center justify-center"
+                    >
                       <Link
                         href={link.href}
-                        className={`relative inline-flex h-full min-w-0 items-center gap-1 whitespace-nowrap transition-colors duration-300 hover:text-[#073B32] ${
+                        className={`relative inline-flex h-full min-w-0 items-center justify-center gap-[6px] whitespace-nowrap py-0 leading-[1] transition-colors duration-300 hover:text-[#073B32] ${
                           isActive ? "font-bold text-[#073B32]" : "font-semibold text-[#111827]"
                         }`}
                       >
                         {link.label}
                         {isServices ? <ChevronDown className="h-4 w-4 shrink-0" /> : null}
                         <span
-                          className={`pointer-events-none absolute left-1/2 bottom-[-8px] h-[3px] w-[32px] -translate-x-1/2 rounded-full bg-[#B7C95A] transition-[transform,opacity] duration-200 ease-out ${
+                          className={`pointer-events-none absolute left-1/2 bottom-[-10px] h-[3px] w-[32px] -translate-x-1/2 rounded-full bg-[#B7C95A] transition-[transform,opacity] duration-200 ease-out ${
                             isActive
                               ? "scale-x-100 opacity-100"
                               : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"

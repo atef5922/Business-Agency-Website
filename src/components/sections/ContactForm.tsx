@@ -16,7 +16,7 @@ const contactSchema = z.object({
 
 type ContactValues = z.infer<typeof contactSchema>;
 
-export function ContactForm() {
+export function ContactForm({ hideIntro = false }: { hideIntro?: boolean }) {
   const [success, setSuccess] = useState(false);
   const {
     register,
@@ -36,9 +36,13 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="h-full rounded-[28px] border border-[#E5E7EB] bg-white p-6 shadow-[0_22px_55px_rgba(7,47,43,0.10)] md:p-8" noValidate>
-      <p className="mb-2 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-[#B7C95A]"><span className="h-px w-8 bg-[#B7C95A]" /> Secure Consultation</p>
-      <h2 className="mb-2 text-3xl font-black">Fill Up The Form</h2>
-      <p className="mb-6 text-sm text-[#6B7280]">We usually respond within one business day with a tailored execution plan.</p>
+      {!hideIntro ? (
+        <>
+          <p className="mb-2 inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.18em] text-[#B7C95A]"><span className="h-px w-8 bg-[#B7C95A]" /> Secure Consultation</p>
+          <h2 className="mb-2 text-3xl font-black">Fill Up The Form</h2>
+          <p className="mb-6 text-sm text-[#6B7280]">We usually respond within one business day with a tailored execution plan.</p>
+        </>
+      ) : null}
       <div className="mb-6 rounded-[22px] border border-[#B7C95A]/20 bg-[#F7F7F3] p-4">
         <p className="text-xs font-black uppercase tracking-[0.16em] text-[#072F2B]">Consultation standards</p>
         <ul className="mt-3 grid gap-2 text-xs text-[#6B7280]">

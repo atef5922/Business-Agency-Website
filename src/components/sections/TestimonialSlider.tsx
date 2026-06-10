@@ -39,22 +39,12 @@ export function TestimonialSlider() {
                 className="relative min-w-0 flex-[0_0_100%] rounded-[34px] border border-[#E5E7EB] bg-white p-8 md:flex-[0_0_62%] lg:flex-[0_0_50%]"
               >
                 <Quote className="absolute right-8 top-8 h-12 w-12 text-[#134E4A]/10" />
-                <div className="mb-5 flex items-center justify-between gap-4">
-                  <span className="inline-flex rounded-full bg-[#134E4A] px-4 py-2 text-xs font-black text-white">{item.category ?? "Digital Transformation"}</span>
-                  <span className="grid h-10 w-10 place-items-center rounded-full border border-[#E5E7EB] bg-[#F7F7F3] text-xs font-black text-[#111827]">{item.logo}</span>
-                </div>
                 <div className="mb-6 flex gap-1 text-[#B7C95A]">
                   {Array.from({ length: rating }).map((_, i) => (
                     <Star key={i} className="h-5 w-5 fill-current drop-shadow-sm" />
                   ))}
                 </div>
                 <p className="mb-8 text-xl font-semibold leading-9 text-[#111827]">&ldquo;{item.quote}&rdquo;</p>
-                <div className="mb-6 grid gap-2 text-xs font-black uppercase tracking-[0.13em] text-[#111827]/65">
-                  <span className="inline-flex h-6 w-fit items-center gap-2 rounded-full border border-[#B7C95A]/45 bg-[#B7C95A]/10 px-3 py-1 text-[#072F2B]">
-                    Project category: {item.category ?? "Digital Transformation"}
-                  </span>
-                  {item.result ? <span className="inline-flex h-6 w-fit items-center gap-2 rounded-full border border-[#E5E7EB] bg-[#F7F7F3] px-3 py-1">Result: {item.result}</span> : null}
-                </div>
                 <div className="flex items-center gap-4">
                   <Image src={item.image} alt={item.name} width={64} height={64} className="h-16 w-16 rounded-full object-cover" />
                   <div>
