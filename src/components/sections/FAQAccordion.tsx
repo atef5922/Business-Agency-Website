@@ -1,7 +1,7 @@
 "use client";
 
 import * as Accordion from "@radix-ui/react-accordion";
-import { Minus, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 
 export function FAQAccordion({ items }: { items: { question: string; answer: string }[] }) {
   return (

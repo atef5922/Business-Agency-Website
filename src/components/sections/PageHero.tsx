@@ -28,7 +28,7 @@ const heroSquares = [
   { size: 80, right: "9%", top: "58%" },
 ];
 
-export function PageHero({ title: _title, text: _text, label: _label }: PageHeroProps) {
+export function PageHero({ title, text, label }: PageHeroProps) {
   const localSlides = useMemo<HeroSlide[]>(() => heroSlides, []);
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -97,18 +97,17 @@ export function PageHero({ title: _title, text: _text, label: _label }: PageHero
         </div>
       </div>
 
-      <Container className="relative mx-auto flex min-h-[560px] max-w-[1200px] items-center px-6 py-16 lg:min-h-[620px] xl:min-h-[720px] lg:px-8" style={{ zIndex: 40 }}>
+      <Container className="relative z-[40] mx-auto flex min-h-[560px] max-w-[1200px] items-center px-6 py-16 lg:min-h-[620px] xl:min-h-[720px] lg:px-8">
         <div className="grid w-full items-center gap-8 lg:grid-cols-[1fr_320px]">
           <div className="max-w-[620px]">
             <p className="mb-4 inline-flex items-center gap-3 text-[13px] font-extrabold uppercase tracking-[0.08em] text-[#B7C95A]">
               <span className="h-px w-8 bg-[#B7C95A]" />
-              GROWTH, INNOVATION, AND SUCCESS
+              {label}
             </p>
             <h1 className="text-[44px] font-black leading-[1.05] tracking-[-0.04em] text-white lg:text-[72px]">
-              <span className="block font-black">Transforming</span>
-              <span className="block font-normal">Business Growth</span>
-              <span className="block font-black">Drive Success</span>
+              {title}
             </h1>
+            <p className="mt-5 max-w-[560px] text-base leading-8 text-white/80 sm:text-lg sm:leading-9">{text}</p>
             <div className="mt-10">
               <Link
                 href="/contact"
@@ -120,11 +119,7 @@ export function PageHero({ title: _title, text: _text, label: _label }: PageHero
           </div>
 
           <aside className="justify-self-end hidden max-w-[260px] self-end font-bold leading-[1.5] text-white lg:block">
-            Take your brand to new heights
-            <br />
-            Agency offering everything
-            <br />
-            from strategy business.
+            Strategic execution for brands that want momentum, clarity, and measurable digital growth.
           </aside>
         </div>
       </Container>

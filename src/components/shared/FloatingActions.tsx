@@ -95,17 +95,7 @@ export function FloatingActions() {
   }, []);
 
   const onButtonEnter = () => {
-    setIsLabelHovered(true);
-    clearTimers();
-    setIsLabelVisible(true);
-    if (hideTimeoutRef.current) {
-      clearTimeout(hideTimeoutRef.current);
-      hideTimeoutRef.current = null;
-    }
-    if (showTimeoutRef.current) {
-      clearTimeout(showTimeoutRef.current);
-      showTimeoutRef.current = null;
-    }
+    pausePopup();
   };
 
   const onButtonLeave = () => {
